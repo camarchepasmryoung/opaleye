@@ -141,8 +141,8 @@ function noteItem(c, d) {
   // d.inkW = 덱에서 가장 긴 줄의 실제 잉크 폭(렌더 뒤 PNG로 잼) → 그 줄의 좌우 여백이 정확히 같게 시작선을 정함
   const bw = d.blockW || W - MX * 2, left = d.inkW ? Math.round((W - d.inkW) / 2) - 2 : Math.round((W - bw) / 2);
   return doc(`<div style="position:absolute;left:${left}px;width:${bw}px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center">
-    <div class="t" style="font-size:66px;line-height:1.3">${esc(c.no)}.${rich(c.head)}</div>
-    <div class="b" style="margin-top:${c.size ? 44 : 56}px;font-size:${c.size || 40}px;line-height:1.7">${rich(c.text)}</div>
+    <div class="t" style="font-size:${d.big ? 74 : 66}px;line-height:1.3">${esc(c.no)}.${rich(c.head)}</div>
+    <div class="b wrapchk" style="margin-top:${c.size ? 44 : 56}px;font-size:${c.size || 40}px;line-height:1.7">${rich(c.text)}</div>
   </div>`, { grid: true, brand: d.brand });
 }
 
@@ -161,7 +161,7 @@ function noteCta(c, d) {
       ${st.text ? `<div class="b" style="font-size:30px;margin-bottom:12px"><span style="font-weight:700">${k + 1}.</span> ${rich(st.text)}</div>` : ''}
       <img src="${st.img}" style="display:block;width:100%;border-radius:12px"></div>`).join('');
   return doc(`<div class="above" style="position:absolute;left:50px;right:50px;top:0;bottom:84px;display:flex;flex-direction:column;justify-content:center">
-    <div class="t" style="font-size:46px;line-height:1.3;text-align:center">${rich(c.head)}</div>
+    <div class="t" style="font-size:${d.big ? 54 : 46}px;line-height:1.3;text-align:center">${rich(c.head)}</div>
     <div style="margin-top:44px">${steps}</div></div>`, { brand: d.brand });
 }
 
@@ -175,5 +175,6 @@ export const renderCard = (c, d, i, n) => {
   let html = types[c.type](c, d, i, n);
   html = html.replace(/<div class="foot"><span>(.*?)<\/span><\/div>/, (_, b) =>
     `<div class="foot"><span>${c.type === 'noteCover' && d.src ? `출처 · ${esc(d.src.creator)} 「${esc(d.src.title)}」` : b}</span></div>`);   // 표지 = 출처, 나머지 = 브랜드 (가운데)
+  if (d.big) html = html.replace('</head>', '<style>.foot{font-size:25px}</style></head>');   // 2026-11-09 시영 "글자 전체적으로 더 크게" (11/10~)
   return d.font === 'pretendard' ? html.replace('</head>', SANS + '</head>') : html;
 };
