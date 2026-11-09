@@ -142,7 +142,7 @@ function noteItem(c, d) {
   const bw = d.blockW || W - MX * 2, left = d.inkW ? Math.round((W - d.inkW) / 2) - 2 : Math.round((W - bw) / 2);
   return doc(`<div style="position:absolute;left:${left}px;width:${bw}px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center">
     <div class="t" style="font-size:${d.big ? 74 : 66}px;line-height:1.3">${esc(c.no)}.${rich(c.head)}</div>
-    <div class="b wrapchk" style="margin-top:${c.size ? 44 : 56}px;font-size:${c.size || 40}px;line-height:1.7">${rich(c.text)}</div>
+    <div class="b wrapchk" style="margin-top:${d.gapHead ?? (c.size ? 44 : 56)}px;font-size:${c.size || 40}px;line-height:${d.lh || 1.7}">${rich(c.text)}</div>
   </div>`, { grid: true, brand: d.brand });
 }
 
