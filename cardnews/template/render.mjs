@@ -25,15 +25,49 @@ const fix = o => {
   }
 };
 
+// 잘림 자동 보정 (2026-11-09 시영): 본문이 상자 폭을 넘겨 잘리면(줄 꺾임), 그 장 하나만
+// 48 → 47 → 46…로 1px씩 줄여 다시 렌더한다. 내용(문장)은 절대 줄이지 않는다. 다른 장·다른 덱은 손대지 않는다.
+const checkWrap = (html) => {
+  const tmp = join(outDir, `_wrapchk.html`);
+  writeFileSync(tmp, html.replace('</body>', `<script>document.fonts.ready.then(()=>{
+    const b = document.querySelector('.wrapchk');
+    if (!b) { document.title = 'NA'; return; }
+    const prevWS = b.style.whiteSpace; b.style.whiteSpace = 'nowrap';
+    const wraps = b.scrollWidth > b.clientWidth + 1;
+    b.style.whiteSpace = prevWS;
+    document.title = wraps ? 'WRAP' : 'OK';
+  });</script></body>`));
+  const out = execFileSync(CHROME, ['--headless=new', '--disable-gpu', '--allow-file-access-from-files',
+    '--virtual-time-budget=6000', '--dump-dom', pathToFileURL(resolve(tmp)).href], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
+  return (out.match(/<title>(.*?)<\/title>/) || [])[1];
+};
+const render = (c, d, i, n, png) => {
+  const html = join(outDir, `card-${String(i + 1).padStart(2, '0')}.html`);
+  const body = page(c, d, i, n);
+  writeFileSync(html, body);
+  execFileSync(CHROME, ['--headless=new', '--disable-gpu', '--hide-scrollbars', '--no-sandbox',
+    `--screenshot=${png}`, `--window-size=${W},${H}`, '--force-device-scale-factor=1',
+    '--virtual-time-budget=9000', '--allow-file-access-from-files', pathToFileURL(html).href], { stdio: 'ignore' });
+  return body;
+};
+
 const n = deck.cards.length;
 deck.cards.forEach((c, i) => {
   fix(c);
   const nn = String(i + 1).padStart(2, '0');
-  const html = join(outDir, `card-${nn}.html`), png = join(outDir, `card-${nn}.png`);
-  writeFileSync(html, page(c, deck, i, n));
-  execFileSync(CHROME, ['--headless=new', '--disable-gpu', '--hide-scrollbars', '--no-sandbox',
-    `--screenshot=${png}`, `--window-size=${W},${H}`, '--force-device-scale-factor=1',
-    '--virtual-time-budget=9000', '--allow-file-access-from-files', pathToFileURL(html).href], { stdio: 'ignore' });
+  const png = join(outDir, `card-${nn}.png`);
+  const base = c.size || 48;
+  let body = render(c, deck, i, n, png);
+  if ('size' in c) {
+    let size = base;
+    while (checkWrap(body) === 'WRAP' && size > 30) {
+      size -= 1;
+      console.warn(`  ⚠️  ${nn}장 본문이 ${size + 1}px에서 잘려서 ${size}px로 줄임 (그 장만, 내용은 그대로)`);
+      c.size = size;
+      body = render(c, deck, i, n, png);
+    }
+    if (size !== base) c.size = size; // 메모리상 유지(다음 로직 참고용), 파일은 고치지 않음
+  }
   console.log('rendered', png);
 });
 
