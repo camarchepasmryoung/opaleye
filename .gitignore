@@ -1,0 +1,7 @@
+.env
+data/cache/
+data/transcripts/
+__pycache__/
+.DS_Store
+cardnews/decks/*/*.zip
+cardnews/dashboard/weeks/

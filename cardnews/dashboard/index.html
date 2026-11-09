@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>카드뉴스 주간 보드</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{--bg:#0E0F11;--card:#17181C;--line:#2A2C32;--ink:#ECEEF2;--sub:#A0A5AF;--mute:#6E737D;--blue:#4C6BFF;--sky:#1E2547}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;word-break:keep-all}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+header{position:sticky;top:0;z-index:5;background:rgba(14,15,17,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{max-width:1440px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+h1{font-size:20px;font-weight:800;letter-spacing:-.02em;margin-right:auto}
+.wk{display:flex;align-items:center;gap:6px}
+.wk b{min-width:220px;text-align:center;font-size:15px;font-weight:700}
+.btn{height:36px;padding:0 14px;border-radius:10px;background:var(--card);border:1px solid var(--line);font-size:14px;font-weight:600}
+.btn:hover{border-color:#4A4D55}
+a.btn{display:inline-flex;align-items:center;text-decoration:none;color:var(--ink)}
+.btn.pri{background:var(--blue);border-color:var(--blue);color:#fff}
+.legend{display:flex;gap:10px;font-size:12px;color:var(--sub)}
+main{max-width:1440px;margin:0 auto;padding:24px}
+.week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:14px}
+@media(max-width:1100px){.week{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:640px){.week{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.day{display:flex;flex-direction:column;gap:8px}
+.dh{display:flex;align-items:baseline;gap:6px;font-size:13px;color:var(--sub);font-weight:600}
+.dh .d{font-size:20px;font-weight:800;color:var(--ink)}
+.dh.today .d{color:var(--blue)}
+.dh.today::after{content:'오늘';font-size:11px;color:#fff;background:var(--blue);padding:2px 6px;border-radius:6px;margin-left:auto}
+.deck{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-align:left;transition:transform .15s,box-shadow .15s}
+.deck:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.deck img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;background:#222}
+.deck .m{padding:10px 12px 12px}
+.deck .t{font-size:14px;font-weight:700;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.deck .s{margin-top:8px;display:flex;align-items:center;gap:6px;font-size:12px;color:var(--sub)}
+.chip{font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px}
+.st-초안{background:#2A2C32;color:#B8BCC6}.st-수정중{background:#3A2E14;color:#F2C46B}.st-검수완료{background:#143323;color:#6BD99A}.st-발행됨{background:var(--sky);color:#9DB1FF}
+.req-n{margin-left:auto;color:#FF7FB3;font-weight:700}
+.empty{border:1.5px dashed var(--line);border-radius:14px;aspect-ratio:1/1.25;display:grid;place-items:center;color:var(--mute);font-size:13px}
+
+/* 뷰어 */
+.viewer{position:fixed;inset:0;z-index:20;background:#08090A;display:none;grid-template-columns:1fr 380px}
+.viewer.on{display:grid}
+@media(max-width:900px){.viewer{grid-template-columns:1fr}.side{display:none}}
+.stage{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0;padding:20px}
+.top{position:absolute;top:16px;left:20px;right:20px;display:flex;align-items:center;gap:10px;color:#fff;font-size:14px}
+.top .tt{font-weight:700;margin-right:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.top .btn{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.18);color:#fff}
+.phone{position:relative;height:min(82vh,calc(100vw - 460px));max-height:860px;aspect-ratio:1/1;border-radius:6px;overflow:hidden;background:#000;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+@media(max-width:900px){.phone{height:auto;width:min(92vw,520px)}}
+.track{display:flex;height:100%;transition:transform .32s cubic-bezier(.2,.8,.2,1)}
+.track img{flex:none;width:100%;height:100%;object-fit:cover;user-select:none;-webkit-user-drag:none}
+.nav{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.9);display:grid;place-items:center;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.nav.l{left:12px}.nav.r{right:12px}.nav[hidden]{display:none}
+.nav svg{width:16px;height:16px}
+.cnt{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.55);color:#fff;font-size:12px;font-weight:600;padding:4px 9px;border-radius:999px}
+.dots{display:flex;gap:5px;margin-top:14px}
+.dots i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.35)}
+.dots i.on{background:#fff}
+.grid{display:none;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;width:100%;max-width:1100px;max-height:80vh;overflow:auto;padding-top:50px}
+.grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:6px;cursor:pointer}
+.grid figure{color:#aaa;font-size:12px}
+.grid figcaption{display:flex;justify-content:space-between;margin-top:6px}
+.grid figcaption a{color:#9DB1FF;text-decoration:none;font-weight:600}
+.mode-grid .grid{display:grid}.mode-grid .phone,.mode-grid .dots{display:none}
+/* 다른 버전 */
+.vbar{display:none;align-items:center;gap:6px;margin-top:12px;color:#aaa;font-size:13px}
+.vbar.on{display:flex}
+.vbar button{height:30px;padding:0 12px;border-radius:8px;border:1px solid rgba(255,255,255,.2);color:#ddd;font-size:13px;font-weight:600}
+.vbar button.on{background:#fff;color:#111;border-color:#fff}
+.vtag{position:absolute;top:12px;left:12px;background:#E2468F;color:#fff;font-size:12px;font-weight:700;padding:4px 9px;border-radius:999px}
+.cmp{display:none;gap:18px;align-items:flex-start}
+.cmp figure{margin:0;color:#ccc;font-size:14px;font-weight:600;text-align:center}
+.cmp img{display:block;height:min(76vh,calc((100vw - 500px) / 2));aspect-ratio:1/1;object-fit:cover;border-radius:6px;margin-top:8px}
+.mode-cmp .cmp{display:flex}.mode-cmp .phone,.mode-cmp .dots{display:none}
+.side{background:var(--card);border-left:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
+.side .hd{padding:20px;border-bottom:1px solid var(--line)}
+.side .hd .t{font-size:16px;font-weight:800;line-height:1.35}
+.side .hd .s{margin-top:8px;display:flex;gap:6px;align-items:center;font-size:12px;color:var(--sub)}
+.side .bd{padding:16px 20px;overflow:auto;flex:1;display:flex;flex-direction:column;gap:12px}
+.lbl{font-size:12px;font-weight:700;color:var(--sub)}
+.side .bd > *{flex:none}
+.post{width:100%;min-height:190px;background:#0E0F11;color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:inherit;font-size:13.5px;line-height:1.6;resize:vertical}
+textarea{width:100%;min-height:96px;resize:vertical;background:#0E0F11;color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:inherit;font-size:14px;line-height:1.5}
+textarea:focus{outline:2px solid var(--blue);outline-offset:-1px}
+.seg{display:flex;gap:6px}
+.seg button{flex:1;height:32px;border-radius:8px;border:1px solid var(--line);font-size:13px;font-weight:600}
+.seg button.on{background:var(--ink);color:#111;border-color:var(--ink)}
+.reqs{display:flex;flex-direction:column;gap:6px}
+.req{font-size:13px;line-height:1.45;background:#0E0F11;border:1px solid var(--line);border-radius:10px;padding:8px 10px;display:flex;gap:8px}
+.req b{flex:none;color:var(--blue)}
+.req span{flex:1;white-space:pre-wrap}
+.req button{color:var(--mute);font-size:12px}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#ECEEF2;color:#111 !important;color:#fff;font-size:14px;padding:10px 16px;border-radius:10px;opacity:0;transition:opacity .2s;z-index:30;pointer-events:none}
+.toast.on{opacity:1}
+details{font-size:13px}
+details pre{white-space:pre-wrap;font:inherit;font-size:12.5px;line-height:1.55;color:var(--sub);margin-top:8px;max-height:260px;overflow:auto}
+</style>
+</head>
+<body>
+<header><div class="bar">
+  <h1>카드뉴스 주간 보드</h1>
+  <div class="legend"><span class="chip st-초안">초안</span><span class="chip st-수정중">수정중</span><span class="chip st-검수완료">검수완료</span><span class="chip st-발행됨">발행됨</span></div>
+  <div class="wk"><button class="btn" id="prev" aria-label="지난주">‹</button><b id="wkLabel"></b><button class="btn" id="next" aria-label="다음 주">›</button></div>
+  <button class="btn" id="thisWeek">이번 주</button>
+  <button class="btn" id="copyWeek">이번 주 요청 복사</button>
+  <a class="btn pri" id="dlWeek" download>이번 주 전체 다운로드</a>
+</div></header>
+<main><div class="week" id="week"></div></main>
+
+<div class="viewer" id="viewer">
+  <div class="stage" id="stage">
+    <div class="top">
+      <span class="tt" id="vTitle"></span>
+      <button class="btn" id="toggleMode">모아 보기</button>
+      <button class="btn" id="close">닫기 (Esc)</button>
+    </div>
+    <div class="phone" id="phone">
+      <div class="track" id="track"></div>
+      <span class="cnt" id="cnt"></span>
+      <span class="vtag" id="vtag" hidden></span>
+      <button class="nav l" id="vl" aria-label="이전 장"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="nav r" id="vr" aria-label="다음 장"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+    </div>
+    <div class="dots" id="dots"></div>
+    <div class="cmp" id="cmp"></div>
+    <div class="vbar" id="vbar"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+  <aside class="side">
+    <div class="hd"><div class="t" id="sTitle"></div><div class="s" id="sMeta"></div></div>
+    <div class="bd">
+      <div class="lbl">유튜브 게시물 글</div>
+      <textarea class="post" id="postText" readonly></textarea>
+      <button class="btn pri" id="copyPost">게시물 글 복사</button>
+      <div class="lbl" style="margin-top:6px">다운로드</div>
+      <div style="display:flex;gap:8px"><a class="btn pri" id="dlAll" style="flex:1;justify-content:center" download>전체 한 번에 (zip)</a><a class="btn" id="dlOne" download>이 장만</a></div>
+      <div class="lbl" style="margin-top:6px">수정 요청</div>
+      <div class="seg"><button id="scopeSlide" class="on">이 장만</button><button id="scopeDeck">덱 전체</button></div>
+      <textarea id="reqText" placeholder="예) 글이 너무 많아요. 박스 설명 한 줄로 줄여 주세요."></textarea>
+      <div style="display:flex;gap:8px"><button class="btn pri" id="addReq" style="flex:1">요청 추가 (⌘ Enter)</button><button class="btn" id="copyDeck">이 덱 요청 복사</button></div>
+      <div class="reqs" id="reqs"></div>
+      <details id="capBox"><summary class="lbl" style="cursor:pointer">플랫폼별 글 보기</summary><pre id="caps"></pre></details>
+    </div>
+  </aside>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="data.js"></script>
+<script src="weeks.js"></script>
+<script>
+const DECKS = (window.CARDNEWS || []).slice();
+const $ = id => document.getElementById(id);
+const DOW = ['월', '화', '수', '목', '금', '토', '일'];
+const ymd = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+const monday = d => { const x = new Date(d.getFullYear(), d.getMonth(), d.getDate()); x.setDate(x.getDate() - ((x.getDay() + 6) % 7)); return x; };
+const isoWeek = d => { const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate())); const day = t.getUTCDay() || 7; t.setUTCDate(t.getUTCDate() + 4 - day); const y = new Date(Date.UTC(t.getUTCFullYear(), 0, 1)); return [t.getUTCFullYear(), Math.ceil(((t - y) / 864e5 + 1) / 7)]; };
+
+// 수정 요청 저장 (이 브라우저에만)
+const store = {
+  get(id) { try { return JSON.parse(localStorage.getItem('cn-req:' + id) || '[]'); } catch { return []; } },
+  set(id, v) { try { localStorage.setItem('cn-req:' + id, JSON.stringify(v)); } catch {} },
+};
+
+let wk = monday(new Date());
+function renderWeek() {
+  const [y, w] = isoWeek(wk), end = new Date(wk); end.setDate(end.getDate() + 6);
+  $('wkLabel').textContent = `${y}년 ${w}주차 · ${wk.getMonth() + 1}/${wk.getDate()}–${end.getMonth() + 1}/${end.getDate()}`;
+  const wi = (window.CARDNEWS_WEEKS || {})[`${y}-W${String(w).padStart(2, '0')}`];
+  const dl = $('dlWeek');
+  if (wi && wi.zip) { dl.href = wi.zip; dl.setAttribute('download', decodeURIComponent(wi.zip.split('/').pop())); dl.textContent = `이번 주 전체 다운로드 (${wi.count}개)`; dl.style.pointerEvents = ''; dl.style.opacity = '';
+    dl.title = wi.skip.length ? `사실 체크 미완이라 뺀 덱: ${wi.skip.join(', ')}` : '날짜별 폴더로 정리돼 있어요'; }
+  else { dl.removeAttribute('href'); dl.textContent = '이번 주 받을 덱 없음'; dl.style.pointerEvents = 'none'; dl.style.opacity = '.4'; }
+  const today = ymd(new Date());
+  $('week').innerHTML = DOW.map((name, k) => {
+    const d = new Date(wk); d.setDate(d.getDate() + k);
+    const key = ymd(d), list = DECKS.filter(x => x.date === key);
+    const cards = list.length ? list.map(x => {
+      const n = store.get(x.id).length;
+      return `<button class="deck" data-id="${x.id}"><img src="${x.slides[0] || ''}" alt="" loading="lazy">
+        <div class="m"><div class="t">${x.title}</div><div class="s"><span class="chip st-${x.status}">${x.status}</span><span class="chip ${x.facts === 'ok' ? 'st-검수완료' : 'st-수정중'}">${x.facts === 'ok' ? '사실 체크 ✓' : '사실 체크 미완'}</span>${x.slides.length}장${n ? `<span class="req-n">요청 ${n}</span>` : ''}</div></div></button>`;
+    }).join('') : `<div class="empty">비어 있음</div>`;
+    return `<section class="day"><div class="dh${key === today ? ' today' : ''}"><span class="d">${d.getDate()}</span>${name}</div>${cards}</section>`;
+  }).join('');
+  document.querySelectorAll('.deck').forEach(b => b.onclick = () => openDeck(b.dataset.id));
+}
+$('prev').onclick = () => { wk.setDate(wk.getDate() - 7); renderWeek(); };
+$('next').onclick = () => { wk.setDate(wk.getDate() + 7); renderWeek(); };
+$('thisWeek').onclick = () => { wk = monday(new Date()); renderWeek(); };
+
+// ── 뷰어
+let cur = null, idx = 0, scope = 'slide', vsel = {}, cmpOn = false;
+function openDeck(id) {
+  cur = DECKS.find(x => x.id === id); idx = 0; vsel = {}; cmpOn = false;
+  $('track').innerHTML = cur.slides.map(s => `<img src="${s}" alt="">`).join('');
+  $('grid').innerHTML = cur.slides.map((s, k) => `<figure><img src="${s}" data-k="${k}" alt=""><figcaption><span>${k + 1}장</span><a href="${s}" download="${cur.id}_${String(k + 1).padStart(2, '0')}.png">⬇ 받기</a></figcaption></figure>`).join('');
+  $('dlAll').href = cur.zip; $('dlAll').setAttribute('download', `${cur.id}.zip`); $('dlAll').style.display = cur.zip ? '' : 'none';
+  $('grid').querySelectorAll('img').forEach(im => im.onclick = () => { idx = +im.dataset.k; setMode(false); go(); });
+  $('dots').innerHTML = cur.slides.map(() => '<i></i>').join('');
+  $('vTitle').textContent = `${cur.date} · ${cur.title}`;
+  $('sTitle').textContent = cur.title;
+  $('sMeta').innerHTML = `<span class="chip st-${cur.status}">${cur.status}</span>${cur.date} · ${cur.slides.length}장 · ${cur.theme}`;
+  $('caps').textContent = cur.captions || '(captions.md 없음)';
+  $('postText').value = cur.post || '(게시물 글 없음)';
+  $('capBox').style.display = cur.captions ? '' : 'none';
+  setMode(false); go(); renderReqs();
+  $('viewer').classList.add('on');
+}
+function go() {
+  const n = cur.slides.length; idx = Math.max(0, Math.min(n - 1, idx));
+  $('track').style.transform = `translateX(${-idx * 100}%)`;
+  $('cnt').textContent = `${idx + 1} / ${n}`;
+  $('vl').hidden = idx === 0; $('vr').hidden = idx === n - 1;
+  [...$('dots').children].forEach((d, k) => d.classList.toggle('on', k === idx));
+  $('dlOne').href = cur.slides[idx]; $('dlOne').setAttribute('download', `${cur.id}_${String(idx + 1).padStart(2, '0')}.png`);
+  renderVariants();
+}
+// 이 장에 다른 버전이 있으면: [원본] [버전…] [나란히 비교]
+function renderVariants() {
+  const vs = (cur.variants || {})[idx + 1] || [], sel = vsel[idx] ?? -1;
+  const img = $('track').children[idx];
+  if (img) img.src = sel < 0 ? cur.slides[idx] : vs[sel].src;
+  $('vtag').hidden = sel < 0; $('vtag').textContent = sel < 0 ? '' : vs[sel].name;
+  if (!vs.length) { $('vbar').classList.remove('on'); $('stage').classList.remove('mode-cmp'); return; }
+  $('vbar').classList.add('on');
+  $('vbar').innerHTML = '이 장 다른 버전 ' + [{ name: '원본' }, ...vs].map((v, k) => `<button data-k="${k - 1}" class="${!cmpOn && sel === k - 1 ? 'on' : ''}">${v.name}</button>`).join('')
+    + `<button data-cmp="1" class="${cmpOn ? 'on' : ''}">나란히 비교</button>`;
+  $('vbar').querySelectorAll('button').forEach(b => b.onclick = () => {
+    if (b.dataset.cmp) cmpOn = !cmpOn; else { cmpOn = false; vsel[idx] = +b.dataset.k; }
+    renderVariants();
+  });
+  $('stage').classList.toggle('mode-cmp', cmpOn);
+  $('cmp').innerHTML = [{ name: '원본', src: cur.slides[idx] }, ...vs].map(v => `<figure>${v.name}<img src="${v.src}" alt=""></figure>`).join('');
+}
+function setMode(grid) { $('stage').classList.toggle('mode-grid', grid); $('toggleMode').textContent = grid ? '넘겨 보기' : '모아 보기'; }
+$('toggleMode').onclick = () => setMode(!$('stage').classList.contains('mode-grid'));
+$('vl').onclick = () => { idx--; go(); };
+$('vr').onclick = () => { idx++; go(); };
+const close = () => { $('viewer').classList.remove('on'); renderWeek(); };
+$('close').onclick = close;
+document.addEventListener('keydown', e => {
+  if (!$('viewer').classList.contains('on') || e.target.tagName === 'TEXTAREA') return;
+  if (e.key === 'ArrowLeft') { idx--; go(); } else if (e.key === 'ArrowRight') { idx++; go(); } else if (e.key === 'Escape') close();
+});
+// 스와이프·드래그
+let sx = null;
+$('phone').addEventListener('pointerdown', e => { if (e.target.closest('.nav')) return; sx = e.clientX; });
+window.addEventListener('pointerup', e => { if (sx == null) return; const dx = e.clientX - sx; sx = null; if (Math.abs(dx) > 40) { idx += dx < 0 ? 1 : -1; go(); } });
+
+// ── 수정 요청
+$('scopeSlide').onclick = () => { scope = 'slide'; $('scopeSlide').classList.add('on'); $('scopeDeck').classList.remove('on'); };
+$('scopeDeck').onclick = () => { scope = 'deck'; $('scopeDeck').classList.add('on'); $('scopeSlide').classList.remove('on'); };
+function addReq() {
+  const t = $('reqText').value.trim(); if (!t) return;
+  const list = store.get(cur.id); list.push({ slide: scope === 'deck' ? 0 : idx + 1, text: t });
+  store.set(cur.id, list); $('reqText').value = ''; renderReqs(); toast('요청을 추가했어요');
+}
+$('addReq').onclick = addReq;
+$('reqText').addEventListener('keydown', e => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) addReq(); });
+function renderReqs() {
+  const list = store.get(cur.id);
+  $('reqs').innerHTML = list.map((r, k) => `<div class="req"><b>${r.slide ? r.slide + '장' : '전체'}</b><span></span><button data-k="${k}">지우기</button></div>`).join('');
+  [...$('reqs').children].forEach((el, k) => { el.querySelector('span').textContent = list[k].text; });
+  $('reqs').querySelectorAll('button').forEach(b => b.onclick = () => { const l = store.get(cur.id); l.splice(+b.dataset.k, 1); store.set(cur.id, l); renderReqs(); });
+}
+const fmt = d => { const l = store.get(d.id); return l.length ? `■ ${d.date} ${d.id}\n` + l.map(r => `- ${r.slide ? r.slide + '장' : '덱 전체'}: ${r.text}`).join('\n') : ''; };
+async function copy(text) {
+  if (!text) return toast('복사할 요청이 없어요');
+  try { await navigator.clipboard.writeText(text); } catch { const t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); }
+  toast('복사했어요. Claude에게 붙여 넣으세요');
+}
+$('copyDeck').onclick = () => copy(fmt(cur) && `[카드뉴스 수정 요청]\n${fmt(cur)}`);
+$('copyWeek').onclick = () => {
+  const end = new Date(wk); end.setDate(end.getDate() + 6);
+  const body = DECKS.filter(d => d.date >= ymd(wk) && d.date <= ymd(end)).map(fmt).filter(Boolean).join('\n\n');
+  copy(body && `[카드뉴스 수정 요청 · ${$('wkLabel').textContent}]\n${body}`);
+};
+$('copyPost').onclick = () => copy(cur.post || '');
+let tt; function toast(m) { $('toast').textContent = m; $('toast').classList.add('on'); clearTimeout(tt); tt = setTimeout(() => $('toast').classList.remove('on'), 1800); }
+
+renderWeek();
+// 주소 끝 #덱폴더이름 → 그 덱 뷰어 바로 열기 (#덱/grid = 모아 보기)
+const [hid, hmode] = decodeURIComponent(location.hash.slice(1)).split('/');
+if (hid && DECKS.some(d => d.id === hid)) { const d = DECKS.find(x => x.id === hid); wk = monday(new Date(d.date + 'T00:00')); renderWeek(); openDeck(hid); if (hmode === 'grid') setMode(true); else if (/^\d+$/.test(hmode || '')) { idx = +hmode - 1; go(); } else if (/^\d+c$/.test(hmode || '')) { idx = parseInt(hmode) - 1; cmpOn = true; go(); } }
+</script>
+</body>
+</html>
