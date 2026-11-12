@@ -1,4 +1,4 @@
-// build.mjs가 만든 파일 — 직접 고치지 않는다 (2026-11-09T07:40:17.046Z)
+// build.mjs가 만든 파일 — 직접 고치지 않는다 (2026-11-12T22:25:57.507Z)
 window.CARDNEWS = [
  {
   "variants": {},
@@ -105,6 +105,33 @@ window.CARDNEWS = [
  },
  {
   "variants": {},
+  "zip": "../decks/2026-11-12_after-upload/2026-11-12_after-upload.zip",
+  "id": "2026-11-12_after-upload",
+  "date": "2026-11-12",
+  "title": "업로드 직후 체크리스트 5가지",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "YT UNLOCKED",
+   "video": "https://www.youtube.com/watch?v=8WrFkUODe1w"
+  },
+  "facts": "ok",
+  "post": "영상 올리고 나서 새로고침만 누르고 있진 않으세요?\n구독자 50.3만 유튜브 전략가 채널 YT UNLOCKED가 정리한 업로드 직후 체크리스트예요.\n여러분은 이 중 몇 가지나 지키고 계세요?\n\n#유튜브업로드 #유튜브알고리즘 #유튜브초보",
+  "cover": "업로드하고 ==새로고침==만 누르고 있나요",
+  "slides": [
+   "../decks/2026-11-12_after-upload/out-note/card-01.png",
+   "../decks/2026-11-12_after-upload/out-note/card-02.png",
+   "../decks/2026-11-12_after-upload/out-note/card-03.png",
+   "../decks/2026-11-12_after-upload/out-note/card-04.png",
+   "../decks/2026-11-12_after-upload/out-note/card-05.png",
+   "../decks/2026-11-12_after-upload/out-note/card-06.png",
+   "../decks/2026-11-12_after-upload/out-note/card-07.png",
+   "../decks/2026-11-12_after-upload/out-note/card-08.png"
+  ],
+  "captions": "# 2026-11-12 · 업로드 직후 체크리스트 5가지 — 플랫폼별 글\n\n## 인스타그램\n영상 올리고 나서 새로고침만 누르고 있진 않으세요?\n\n구독자 50.3만 유튜브 전략가 채널 YT UNLOCKED가 정리한 업로드 직후 체크리스트, 5가지만 추렸어요.\n\n01 비공개로 먼저 점검\n02 아무에게나 보내지 않기\n03 4시간은 그대로\n04 핀 댓글은 5초 질문으로\n05 숫자는 두 개만 보기\n\n여러분은 몇 가지나 지키고 계세요? 댓글로 알려 주세요.\n\n출처: YT UNLOCKED 「9 Things You Must Do After Uploading a YouTube Video」\n\n#유튜브 #유튜브팁 #유튜브업로드 #유튜브초보 #유튜브알고리즘 #유튜브성장\n\n## 스레드\n영상 올리고 나서 새로고침만 누르고 있진 않으세요?\n비공개로 먼저 점검하기, 아무에게나 보내지 않기, 4시간은 그대로 두기, 핀 댓글은 5초 질문으로, 숫자는 두 개만 보기.\n여러분은 몇 가지나 지키고 계세요?\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n영상 올리고 나서 새로고침만 누르고 있진 않으세요?\n구독자 50.3만 유튜브 전략가 채널 YT UNLOCKED가 정리한 업로드 직후 체크리스트예요.\n여러분은 이 중 몇 가지나 지키고 계세요?\n\n#유튜브업로드 #유튜브알고리즘 #유튜브초보\n"
+ },
+ {
+  "variants": {},
   "zip": "../decks/2026-11-12_shorts-original/2026-11-12_shorts-original.zip",
   "id": "2026-11-12_shorts-original",
   "date": "2026-11-12",
@@ -131,6 +158,31 @@ window.CARDNEWS = [
  },
  {
   "variants": {},
+  "zip": "../decks/2026-11-13_faceless-settings/2026-11-13_faceless-settings.zip",
+  "id": "2026-11-13_faceless-settings",
+  "date": "2026-11-13",
+  "title": "얼굴 없는 채널에서 바꾼 설정 3가지",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "Chiamaka Okoli",
+   "video": "https://www.youtube.com/watch?v=1ZWPXzlkuE0"
+  },
+  "facts": "ok",
+  "post": "다들 켜 두라던 구독 알림, 껐더니 조회수가 바뀌었대요.\n구독자 11.6만 유튜버 Chiamaka Okoli가 새로 키우는 얼굴 없는 채널에서 바꾼 설정 3가지를 정리했어요.\n여러분 채널은 어떤 설정을 쓰고 계세요?\n\n#유튜브설정 #유튜브알고리즘 #페이스리스채널",
+  "cover": "다들 켜라던 설정을 ==껐더니== 달라졌어요",
+  "slides": [
+   "../decks/2026-11-13_faceless-settings/out-note/card-01.png",
+   "../decks/2026-11-13_faceless-settings/out-note/card-02.png",
+   "../decks/2026-11-13_faceless-settings/out-note/card-03.png",
+   "../decks/2026-11-13_faceless-settings/out-note/card-04.png",
+   "../decks/2026-11-13_faceless-settings/out-note/card-05.png",
+   "../decks/2026-11-13_faceless-settings/out-note/card-06.png"
+  ],
+  "captions": "# 2026-11-13 · 얼굴 없는 채널에서 바꾼 설정 3가지 — 플랫폼별 글\n\n## 인스타그램\n다들 켜 두라던 구독 알림, 껐더니 조회수가 달라졌대요.\n\n구독자 11.6만 유튜버 Chiamaka Okoli가 새로 키우는 얼굴 없는(페이스리스) 채널에서 바꾼 설정 3가지를 정리했어요.\n\n01 구독 알림 끄기\n02 카테고리 매번 바꾸기\n03 자동 캡션 켜기\n\n여러분 채널은 어떤 설정을 쓰고 계세요? 댓글로 알려 주세요.\n\n출처: Chiamaka Okoli 「This YouTube SETTING KILLS VIEWS. Turn It OFF NOW」\n\n#유튜브 #유튜브설정 #유튜브알고리즘 #페이스리스채널 #유튜브팁 #유튜브성장\n\n## 스레드\n다들 켜 두라던 구독 알림, 껐더니 조회수가 달라졌대요.\n구독 알림 끄기, 영상마다 카테고리 바꾸기, 자동 캡션 켜기.\n여러분 채널은 어떤 설정을 쓰고 계세요?\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n다들 켜 두라던 구독 알림, 껐더니 조회수가 바뀌었대요.\n구독자 11.6만 유튜버 Chiamaka Okoli가 새로 키우는 얼굴 없는 채널에서 바꾼 설정 3가지를 정리했어요.\n여러분 채널은 어떤 설정을 쓰고 계세요?\n\n#유튜브설정 #유튜브알고리즘 #페이스리스채널\n"
+ },
+ {
+  "variants": {},
   "zip": "../decks/2026-11-13_views-stop-48h/2026-11-13_views-stop-48h.zip",
   "id": "2026-11-13_views-stop-48h",
   "date": "2026-11-13",
@@ -154,6 +206,32 @@ window.CARDNEWS = [
    "../decks/2026-11-13_views-stop-48h/out-note/card-07.png"
   ],
   "captions": "# 2026-11-13 · 조회수가 48시간 뒤 멈추는 이유 — 플랫폼별 글\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n올리고 이틀 지나면 조회수가 딱 멈추는 영상, 왜 그럴까요?\n1년 가까이 영상마다 2,000회에서 멈췄던 Danny Why가 찾은 이유를 정리했어요.\n여러분 영상은 보통 몇 회에서 멈추나요?\n\n#유튜브조회수 #유튜브알고리즘 #작은채널\n\n출처: Danny Why 「Why Your Views STOP After 48 Hours (learn how to fix it)」\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-11-14_shorts-originality/2026-11-14_shorts-originality.zip",
+  "id": "2026-11-14_shorts-originality",
+  "date": "2026-11-14",
+  "title": "쇼츠 재업로드, 추천이 줄었대요",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "9to5Google",
+   "video": "https://9to5google.com/2026/10/02/youtube-wont-recommend-unoriginal-shorts/"
+  },
+  "facts": "ok",
+  "post": "쇼츠에 남의 영상을 그대로 올리던 채널, 요즘 추천이 줄었다는 말이 나와요.\n2026년 10월부터 유튜브가 쇼츠 추천 방식을 바꿨다고 외신들이 전했어요.\n여러분 쇼츠는 요즘 어때요?\n\n#유튜브쇼츠 #쇼츠알고리즘 #유튜브업데이트",
+  "cover": "쇼츠 ==재업로드==, 추천이 줄었대요",
+  "slides": [
+   "../decks/2026-11-14_shorts-originality/out-note/card-01.png",
+   "../decks/2026-11-14_shorts-originality/out-note/card-02.png",
+   "../decks/2026-11-14_shorts-originality/out-note/card-03.png",
+   "../decks/2026-11-14_shorts-originality/out-note/card-04.png",
+   "../decks/2026-11-14_shorts-originality/out-note/card-05.png",
+   "../decks/2026-11-14_shorts-originality/out-note/card-06.png",
+   "../decks/2026-11-14_shorts-originality/out-note/card-07.png"
+  ],
+  "captions": "# 2026-11-14 · 쇼츠 재업로드, 추천이 줄었대요 — 플랫폼별 글\n\n## 인스타그램\n쇼츠에 남의 영상을 그대로 올리던 채널, 요즘 추천이 줄었다는 말이 나와요.\n\n2026년 10월부터 유튜브가 쇼츠 추천 방식을 바꿨다고 외신들이 전했어요. 아직 안 바뀐 것도 정리했어요.\n\n01 뭐가 바뀌었나\n02 수익화는 별개\n03 되돌리는 법\n04 아직 모르는 것\n\n여러분 쇼츠는 요즘 어때요? 댓글로 알려 주세요.\n\n출처: 9to5Google 「YouTube won't recommend unoriginal Shorts」 등\n\n#유튜브 #유튜브쇼츠 #쇼츠알고리즘 #유튜브업데이트 #유튜브뉴스 #유튜브정책\n\n## 스레드\n쇼츠에 남의 영상을 그대로 올리던 채널, 요즘 추천이 줄었다는 말이 나와요.\n2026년 10월부터 바뀐 쇼츠 추천 방식과, 아직 안 바뀐 수익화 기준을 정리했어요.\n여러분 쇼츠는 요즘 어때요?\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n쇼츠에 남의 영상을 그대로 올리던 채널, 요즘 추천이 줄었다는 말이 나와요.\n2026년 10월부터 유튜브가 쇼츠 추천 방식을 바꿨다고 외신들이 전했어요.\n여러분 쇼츠는 요즘 어때요?\n\n#유튜브쇼츠 #쇼츠알고리즘 #유튜브업데이트\n"
  },
  {
   "variants": {},
@@ -207,5 +285,109 @@ window.CARDNEWS = [
    "../decks/2026-11-15_upload-settings/out-note/card-07.png"
   ],
   "captions": "# 2026-11-15 · 영상 올릴 때 꼭 확인할 설정 4가지 — 플랫폼별 글\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n영상 올릴 때 이 설정 하나 잘못 누르면, 좋은 영상도 안 보여요.\n평소보다 93배 터진 Amplify Views 영상 속 업로드 설정을 유튜브 공식 도움말로 확인해 정리했어요.\n여러분은 아동용 설정, 어떻게 해 두셨어요?\n\n#유튜브업로드 #유튜브설정 #유튜브초보\n\n출처: Amplify Views 「The RIGHT Way to Upload YouTube Videos in 2026 (Best Settings)」\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-11-15_views-mistakes/2026-11-15_views-mistakes.zip",
+  "id": "2026-11-15_views-mistakes",
+  "date": "2026-11-15",
+  "title": "조회수가 안 나오는 이유 4가지",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "Jay Bea",
+   "video": "https://www.youtube.com/watch?v=XUvac8hrxjQ"
+  },
+  "facts": "ok",
+  "post": "조회수가 안 나오는 건 운이 아니라, 유튜브가 당신을 '봇'으로 의심해서일 수도 있어요.\n구독자 4.9천 유튜버 Jay Bea가 꼽은 조회수 안 나오는 이유 중 4가지를 정리했어요.\n여러분은 몇 가지나 해당되세요?\n\n#유튜브조회수 #유튜브알고리즘 #유튜브초보",
+  "cover": "유튜브가 날, ==봇==이라고 생각해요",
+  "slides": [
+   "../decks/2026-11-15_views-mistakes/out-note/card-01.png",
+   "../decks/2026-11-15_views-mistakes/out-note/card-02.png",
+   "../decks/2026-11-15_views-mistakes/out-note/card-03.png",
+   "../decks/2026-11-15_views-mistakes/out-note/card-04.png",
+   "../decks/2026-11-15_views-mistakes/out-note/card-05.png",
+   "../decks/2026-11-15_views-mistakes/out-note/card-06.png",
+   "../decks/2026-11-15_views-mistakes/out-note/card-07.png"
+  ],
+  "captions": "# 2026-11-15 · 조회수가 안 나오는 이유 4가지 — 플랫폼별 글\n\n## 인스타그램\n조회수가 안 나오는 건 운이 아니라, 유튜브가 당신을 '봇'으로 의심해서일 수도 있어요.\n\n구독자 4.9천 유튜버 Jay Bea가 꼽은 조회수 안 나오는 이유 중 4가지를 정리했어요.\n\n01 새 채널은 신뢰부터 쌓기\n02 아동용 설정 조심하기\n03 AI 콘텐츠는 적당히\n04 가짜 참여는 금지\n\n여러분은 몇 가지나 해당되세요? 댓글로 알려 주세요.\n\n출처: Jay Bea 「9 Mistakes Stopping You From Getting Views on YouTube」\n\n#유튜브 #유튜브조회수 #유튜브알고리즘 #유튜브초보 #유튜브팁 #유튜브성장\n\n## 스레드\n조회수가 안 나오는 건 운이 아니라, 유튜브가 당신을 '봇'으로 의심해서일 수도 있어요.\n새 채널은 신뢰부터 쌓기, 아동용 설정 조심하기, AI 콘텐츠는 적당히, 가짜 참여는 금지.\n여러분은 몇 가지나 해당되세요?\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n조회수가 안 나오는 건 운이 아니라, 유튜브가 당신을 '봇'이라고 의심해서일 수도 있어요.\n구독자 4.9천 유튜버 Jay Bea가 꼽은 조회수 안 나오는 이유 중 4가지를 정리했어요.\n여러분은 몇 가지나 해당되세요?\n\n#유튜브조회수 #유튜브알고리즘 #유튜브초보\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-11-16_first-1000-test/2026-11-16_first-1000-test.zip",
+  "id": "2026-11-16_first-1000-test",
+  "date": "2026-11-16",
+  "title": "첫 1,000명은 테스트 기간이에요",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "ClickTheory",
+   "video": "https://www.youtube.com/watch?v=2uxM8ifXcrg"
+  },
+  "facts": "ok",
+  "post": "첫 1,000명은 숫자가 아니라, 날 알아보는 사람을 찾는 테스트 기간이래요.\n구독자 1.9천 유튜버 ClickTheory가 작은 채널만 가진 강점을 정리했어요.\n여러분은 지금 뭘 실험해 보고 계세요?\n\n#유튜브초보 #작은채널 #구독자늘리기",
+  "cover": "첫 1,000명은, ==테스트 기간==이에요",
+  "slides": [
+   "../decks/2026-11-16_first-1000-test/out-note/card-01.png",
+   "../decks/2026-11-16_first-1000-test/out-note/card-02.png",
+   "../decks/2026-11-16_first-1000-test/out-note/card-03.png",
+   "../decks/2026-11-16_first-1000-test/out-note/card-04.png",
+   "../decks/2026-11-16_first-1000-test/out-note/card-05.png",
+   "../decks/2026-11-16_first-1000-test/out-note/card-06.png",
+   "../decks/2026-11-16_first-1000-test/out-note/card-07.png"
+  ],
+  "captions": "# 2026-11-16 · 첫 1,000명은 테스트 기간이에요 — 플랫폼별 글\n\n## 인스타그램\n첫 1,000명은 숫자가 아니라, 날 알아보는 사람을 찾는 테스트 기간이래요.\n\n구독자 1.9천 유튜버 ClickTheory가 작은 채널만 가진 강점을 정리했어요.\n\n01 작아서 오히려 유리해요\n02 매번 바꾸지 마세요\n03 1,000명은 숫자가 아니에요\n04 넘어도 영상은 흔들려요\n\n여러분은 지금 뭘 실험해 보고 계세요? 댓글로 알려 주세요.\n\n출처: ClickTheory 「Why Your Small YouTube Channel Isn't Growing」\n\n#유튜브 #유튜브초보 #작은채널 #구독자늘리기 #유튜브팁 #유튜브성장\n\n## 스레드\n첫 1,000명은 숫자가 아니라, 날 알아보는 사람을 찾는 테스트 기간이래요.\n작아서 오히려 유리하다는 것, 매번 바꾸지 말라는 것, 1,000명이 끝이 아니라는 것.\n여러분은 지금 뭘 실험해 보고 계세요?\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n첫 1,000명은 숫자가 아니라, 날 알아보는 사람을 찾는 테스트 기간이래요.\n구독자 1.9천 유튜버 ClickTheory가 작은 채널만 가진 강점을 정리했어요.\n여러분은 지금 뭘 실험해 보고 계세요?\n\n#유튜브초보 #작은채널 #구독자늘리기\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-11-17_shorts-monetization-2027/2026-11-17_shorts-monetization-2027.zip",
+  "id": "2026-11-17_shorts-monetization-2027",
+  "date": "2026-11-17",
+  "title": "쇼츠 수익, 1,000만 회를 못 채우면",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "YouTube 고객센터",
+   "video": "https://support.google.com/youtube/answer/12504220?hl=en"
+  },
+  "facts": "ok",
+  "post": "2027년 2월 1일부터 쇼츠로 돈 벌려면 90일마다 1,000만 조회수를 채워야 해요.\n유튜브 고객센터 공지를 바탕으로, 바뀌는 쇼츠 수익 기준을 정리했어요.\n여러분 쇼츠는 최근 90일 조회수가 얼마나 되세요?\n\n#유튜브쇼츠 #유튜브수익화 #유튜브정책",
+  "cover": "쇼츠 수익, 1,000만 회 못 채우면 ==멈춰요==",
+  "slides": [
+   "../decks/2026-11-17_shorts-monetization-2027/out-note/card-01.png",
+   "../decks/2026-11-17_shorts-monetization-2027/out-note/card-02.png",
+   "../decks/2026-11-17_shorts-monetization-2027/out-note/card-03.png",
+   "../decks/2026-11-17_shorts-monetization-2027/out-note/card-04.png",
+   "../decks/2026-11-17_shorts-monetization-2027/out-note/card-05.png",
+   "../decks/2026-11-17_shorts-monetization-2027/out-note/card-06.png",
+   "../decks/2026-11-17_shorts-monetization-2027/out-note/card-07.png"
+  ],
+  "captions": "# 2026-11-17 · 쇼츠 수익, 1,000만 회를 못 채우면 — 플랫폼별 글\n\n## 인스타그램\n2027년 2월 1일부터 쇼츠로 돈 벌려면 90일마다 1,000만 조회수를 채워야 해요.\n\n유튜브 고객센터 공지를 바탕으로, 바뀌는 쇼츠 수익 기준을 정리했어요.\n\n01 뭐가 바뀌나\n02 매달 다시 검사\n03 못 채우면 이렇게\n04 새로 시작하는 사람은\n\n여러분 쇼츠는 최근 90일 조회수가 얼마나 되세요? 댓글로 알려 주세요.\n\n출처: YouTube 고객센터 「YouTube Shorts monetization policies」\n\n#유튜브 #유튜브쇼츠 #유튜브수익화 #유튜브정책 #유튜브뉴스 #쇼츠수익\n\n## 스레드\n2027년 2월 1일부터 쇼츠로 돈 벌려면 90일마다 1,000만 조회수를 채워야 해요.\n못 채워도 롱폼 수익은 그대로, 쇼츠 풀 수익만 멈췄다가 다시 채우면 자동 재개된대요.\n여러분 쇼츠는 최근 90일 조회수가 얼마나 되세요?\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n2027년 2월 1일부터 쇼츠로 돈 벌려면 90일마다 1,000만 조회수를 채워야 해요.\n유튜브 고객센터 공지를 바탕으로, 바뀌는 쇼츠 수익 기준을 정리했어요.\n여러분 쇼츠는 최근 90일 조회수가 얼마나 되세요?\n\n#유튜브쇼츠 #유튜브수익화 #유튜브정책\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-11-18_focus-circle/2026-11-18_focus-circle.zip",
+  "id": "2026-11-18_focus-circle",
+  "date": "2026-11-18",
+  "title": "유튜브는 생각보다 단순해요",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "Brian G. Johnson TV",
+   "video": "https://www.youtube.com/watch?v=1-SJAhmCHNo"
+  },
+  "facts": "ok",
+  "post": "유튜브는 생각보다 단순하대요. 신경 쓸 게 아니라 '원 안'만 남기면 된다고요.\n구독자 17만 유튜버 Brian G. Johnson이 말하는 집중의 기준을 정리했어요.\n여러분의 '원 밖'은 뭐예요?\n\n#유튜브전략 #유튜브알고리즘 #유튜브성장",
+  "cover": "유튜브는, ==생각보다 단순해요==",
+  "slides": [
+   "../decks/2026-11-18_focus-circle/out-note/card-01.png",
+   "../decks/2026-11-18_focus-circle/out-note/card-02.png",
+   "../decks/2026-11-18_focus-circle/out-note/card-03.png",
+   "../decks/2026-11-18_focus-circle/out-note/card-04.png",
+   "../decks/2026-11-18_focus-circle/out-note/card-05.png",
+   "../decks/2026-11-18_focus-circle/out-note/card-06.png",
+   "../decks/2026-11-18_focus-circle/out-note/card-07.png"
+  ],
+  "captions": "# 2026-11-18 · 유튜브는 생각보다 단순해요 — 플랫폼별 글\n\n## 인스타그램\n유튜브는 생각보다 단순하대요. 신경 쓸 게 아니라 '원 안'만 남기면 된다고요.\n\n구독자 17만 유튜버 Brian G. Johnson이 말하는 집중의 기준을 정리했어요.\n\n01 원 안이냐, 원 밖이냐\n02 조회수 70%는 홈에서\n03 \"그만 올려라\"가 클릭을\n04 디테일엔 비용이 있어요\n\n여러분의 '원 밖'은 뭐예요? 댓글로 알려 주세요.\n\n출처: Brian G. Johnson TV 「Unfortunately, YouTube Success is Very Simple」\n\n#유튜브 #유튜브전략 #유튜브알고리즘 #유튜브성장 #유튜브팁 #유튜브초보\n\n## 스레드\n유튜브는 생각보다 단순하대요. 신경 쓸 게 아니라 '원 안'만 남기면 된다고요.\n채널 아트·태그·설명란은 원 밖, 다음 영상이 핵심이라는 원 안.\n여러분의 '원 밖'은 뭐예요?\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n유튜브는 생각보다 단순하대요. 신경 쓸 게 아니라 '원 안'만 남기면 된다고요.\n구독자 17만 유튜버 Brian G. Johnson이 말하는 집중의 기준을 정리했어요.\n여러분의 '원 밖'은 뭐예요?\n\n#유튜브전략 #유튜브알고리즘 #유튜브성장\n"
  }
 ];

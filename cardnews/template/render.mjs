@@ -5,7 +5,9 @@ import { execFileSync } from 'child_process';
 import { resolve, join } from 'path';
 import { pathToFileURL } from 'url';
 
-const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+const CHROME = process.env.CHROME_PATH || (existsSync('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome')
+  ? '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+  : (existsSync('/usr/bin/google-chrome') ? '/usr/bin/google-chrome' : '/opt/pw-browsers/chromium'));
 const deckDir = resolve(process.argv[2] || '.');
 const { default: deck } = await import(pathToFileURL(join(deckDir, 'deck.mjs')).href + `?t=${Date.now()}`);
 const ti = process.argv.indexOf('--theme');
@@ -37,7 +39,7 @@ const checkWrap = (html) => {
     b.style.whiteSpace = prevWS;
     document.title = wraps ? 'WRAP' : 'OK';
   });</script></body>`));
-  const out = execFileSync(CHROME, ['--headless=new', '--disable-gpu', '--allow-file-access-from-files',
+  const out = execFileSync(CHROME, ['--headless=new', '--disable-gpu', '--no-sandbox', '--allow-file-access-from-files',
     '--virtual-time-budget=6000', '--dump-dom', pathToFileURL(resolve(tmp)).href], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
   return (out.match(/<title>(.*?)<\/title>/) || [])[1];
 };
