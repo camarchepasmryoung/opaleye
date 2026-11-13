@@ -1,4 +1,4 @@
-// build.mjs가 만든 파일 — 직접 고치지 않는다 (2026-11-13T02:25:44.129Z)
+// build.mjs가 만든 파일 — 직접 고치지 않는다 (2026-11-13T02:49:43.628Z)
 window.CARDNEWS = [
  {
   "variants": {},
@@ -363,5 +363,31 @@ window.CARDNEWS = [
    "../decks/2026-11-21_focus-circle/out-note/card-07.png"
   ],
   "captions": "# 2026-11-21 · 유튜브는 생각보다 단순해요 — 플랫폼별 글\n\n## 인스타그램\n유튜브는 생각보다 단순하대요. 신경 쓸 게 아니라 '원 안'만 남기면 된다고요.\n\n구독자 17만 유튜버 Brian G. Johnson이 말하는 집중의 기준을 정리했어요.\n\n01 원 안이냐, 원 밖이냐\n02 조회수 70%는 홈에서\n03 \"그만 올려라\"가 클릭을\n04 디테일엔 비용이 있어요\n\n여러분의 '원 밖'은 뭐예요? 댓글로 알려 주세요.\n\n출처: Brian G. Johnson TV 「Unfortunately, YouTube Success is Very Simple」\n\n#유튜브 #유튜브전략 #유튜브알고리즘 #유튜브성장 #유튜브팁 #유튜브초보\n\n## 스레드\n유튜브는 생각보다 단순하대요. 신경 쓸 게 아니라 '원 안'만 남기면 된다고요.\n채널 아트·태그·설명란은 원 밖, 다음 영상이 핵심이라는 원 안.\n여러분의 '원 밖'은 뭐예요?\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n유튜브는 생각보다 단순하대요. 신경 쓸 게 아니라 '원 안'만 남기면 된다고요.\n구독자 17만 유튜버 Brian G. Johnson이 말하는 집중의 기준을 정리했어요.\n여러분의 '원 밖'은 뭐예요?\n\n#유튜브전략 #유튜브알고리즘 #유튜브성장\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-11-22_growth-signals/2026-11-22_growth-signals.zip",
+  "id": "2026-11-22_growth-signals",
+  "date": "2026-11-22",
+  "title": "유튜브가 날 밀어주기 시작했다는 신호",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "ClickTheory",
+   "video": "https://www.youtube.com/watch?v=2H7P6eIksps"
+  },
+  "facts": "ok",
+  "post": "조회수 100~200에 갇혀 있다고 채널이 안 되는 게 아닐 수 있어요.\n클릭시어리가 꼽은, 터지기 직전 채널에서 먼저 보인다는 신호 12가지 중 4가지를 정리했어요.\n여러분 채널엔 몇 개나 보이세요?\n\n#유튜브성장 #유튜브알고리즘 #작은채널",
+  "cover": "조회수 바닥이, ==조금씩 올라가고== 있나요",
+  "slides": [
+   "../decks/2026-11-22_growth-signals/out-note/card-01.png",
+   "../decks/2026-11-22_growth-signals/out-note/card-02.png",
+   "../decks/2026-11-22_growth-signals/out-note/card-03.png",
+   "../decks/2026-11-22_growth-signals/out-note/card-04.png",
+   "../decks/2026-11-22_growth-signals/out-note/card-05.png",
+   "../decks/2026-11-22_growth-signals/out-note/card-06.png",
+   "../decks/2026-11-22_growth-signals/out-note/card-07.png"
+  ],
+  "captions": "# 2026-11-22 · 유튜브가 날 밀어주기 시작했다는 신호 — 플랫폼별 글\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n조회수 100~200에 갇혀 있다고 채널이 안 되는 게 아닐 수 있어요.\n클릭시어리가 꼽은, 터지기 직전 채널에서 먼저 보인다는 신호 12가지 중 4가지를 정리했어요.\n여러분 채널엔 몇 개나 보이세요?\n\n#유튜브성장 #유튜브알고리즘 #작은채널\n\n출처: ClickTheory 「12 Signs YouTube Is About to Push Your Channel」\n"
  }
 ];
