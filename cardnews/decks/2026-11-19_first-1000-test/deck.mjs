@@ -1,11 +1,11 @@
-// 2026-11-16 · ClickTheory 「Why Your Small YouTube Channel Isn't Growing」(2uxM8ifXcrg) — 요즘 터진 영상
+// 2026-11-19 · ClickTheory 「Why Your Small YouTube Channel Isn't Growing」(2uxM8ifXcrg) — 요즘 터진 영상
 // 8.9천 회, 채널 평소의 3.5배 (vidIQ 수집, 2026-11-12). 근거 = source.md
 export default {
   title: '첫 1,000명은 테스트 기간이에요',
   brand: '흰지로의 트렌드 노트', theme: 'note', big: true, font: 'pretendard',
   src: { creator: 'ClickTheory', title: "Why Your Small YouTube Channel Isn't Growing" },
   credit: '© ClickTheory',
-  date: '2026-11-16', status: '초안',
+  date: '2026-11-19', status: '초안',
   inkW: 900,     // 본문 48px 가장 긴 줄 — PNG로 잼
   blockW: 960,   // 48px 본문이 꺾이지 않게 상자 폭 넓힘
   lh: 1.62,      // 줄 간격 살짝 좁혀 위아래에 맞춤

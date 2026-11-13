@@ -1,11 +1,11 @@
-// 2026-11-18 · Brian G. Johnson TV 「Unfortunately, YouTube Success is Very Simple」(1-SJAhmCHNo) — 요즘 터진 영상
+// 2026-11-21 · Brian G. Johnson TV 「Unfortunately, YouTube Success is Very Simple」(1-SJAhmCHNo) — 요즘 터진 영상
 // 2.3만 회 (vidIQ 수집, 2026-11-12). 근거 = source.md
 export default {
   title: '유튜브는 생각보다 단순해요',
   brand: '흰지로의 트렌드 노트', theme: 'note', big: true, font: 'pretendard',
   src: { creator: 'Brian G. Johnson TV', title: 'Unfortunately, YouTube Success is Very Simple' },
   credit: '© Brian G. Johnson TV',
-  date: '2026-11-18', status: '초안',
+  date: '2026-11-21', status: '초안',
   inkW: 900,     // 본문 48px 가장 긴 줄 — PNG로 잼
   blockW: 960,   // 48px 본문이 꺾이지 않게 상자 폭 넓힘
   lh: 1.62,      // 줄 간격 살짝 좁혀 위아래에 맞춤

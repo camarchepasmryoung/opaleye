@@ -1,11 +1,11 @@
-// 2026-11-13 · Chiamaka Okoli 「This YouTube SETTING KILLS VIEWS. Turn It OFF NOW」(1ZWPXzlkuE0) — 요즘 터진 영상
+// 2026-11-17 · Chiamaka Okoli 「This YouTube SETTING KILLS VIEWS. Turn It OFF NOW」(1ZWPXzlkuE0) — 요즘 터진 영상
 // 1.18만 회, 채널 평소의 2.2배 (vidIQ 수집, 2026-11-12). 근거 = source.md
 export default {
   title: '얼굴 없는 채널에서 바꾼 설정 3가지',
   brand: '흰지로의 트렌드 노트', theme: 'note', big: true, font: 'pretendard',
   src: { creator: 'Chiamaka Okoli', title: 'This YouTube SETTING KILLS VIEWS. Turn It OFF NOW' },
   credit: '© Chiamaka Okoli',
-  date: '2026-11-13', status: '초안',
+  date: '2026-11-17', status: '초안',
   inkW: 900,     // 본문 48px 가장 긴 줄 — PNG로 잼
   blockW: 960,   // 48px 본문이 꺾이지 않게 상자 폭 넓힘
   lh: 1.62,      // 줄 간격 살짝 좁혀 위아래에 맞춤

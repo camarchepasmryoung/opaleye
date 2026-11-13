@@ -1,11 +1,11 @@
-// 2026-11-12 · YT UNLOCKED 「9 Things You Must Do After Uploading a YouTube Video」(8WrFkUODe1w) — 오늘 올라온 급상승 영상
+// 2026-11-16 · YT UNLOCKED 「9 Things You Must Do After Uploading a YouTube Video」(8WrFkUODe1w) — 오늘 올라온 급상승 영상
 // 2.1만 회, 시간당 2,211회(2026-11-12 vidIQ 수집, 공개 6시간 안). 근거 = source.md
 export default {
   title: '업로드 직후 체크리스트 5가지',
   brand: '흰지로의 트렌드 노트', theme: 'note', big: true, font: 'pretendard',
   src: { creator: 'YT UNLOCKED', title: '9 Things You Must Do After Uploading a YouTube Video' },
   credit: '© YT UNLOCKED',
-  date: '2026-11-12', status: '초안',
+  date: '2026-11-16', status: '초안',
   inkW: 900,     // 본문 48px 가장 긴 줄 — PNG로 잼
   blockW: 960,   // 48px 본문이 꺾이지 않게 상자 폭 넓힘
   lh: 1.62,      // 줄 간격 살짝 좁혀 위아래에 맞춤

@@ -1,0 +1,22 @@
+# 카드뉴스 클라우드 라우틴이 커밋 메시지에 [notify]를 넣어 main에 push하면 Discord #cardnews로 알린다.
+# 클라우드 세션은 discord.com 접속이 막혀 있어서(2026-11-13 실패) 알림은 GitHub가 대신 보낸다.
+# 커밋 메시지의 "⚠️"로 시작하는 줄은 알림에 그대로 덧붙인다.
+name: cardnews-notify
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  notify:
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[notify]')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Discord 알림
+        env:
+          WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_CARDNEWS }}
+          MSG: ${{ github.event.head_commit.message }}
+        run: |
+          warn=$(printf '%s\n' "$MSG" | grep '^⚠️' || true)
+          body=$(printf '**다음 주 카드뉴스 다 만들었어요 확인해 주세요**\n\n👉 https://camarchepasmryoung.github.io/opaleye/cardnews/dashboard/')
+          [ -n "$warn" ] && body=$(printf '%s\n\n%s' "$body" "$warn")
+          jq -n --arg c "$body" '{content:$c}' | curl -sS -f -H 'Content-Type: application/json' -d @- "$WEBHOOK"
