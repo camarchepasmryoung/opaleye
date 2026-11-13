@@ -148,8 +148,8 @@ details pre{white-space:pre-wrap;font:inherit;font-size:12.5px;line-height:1.55;
 </div>
 <div class="toast" id="toast"></div>
 
-<script src="data.js"></script>
-<script src="weeks.js"></script>
+<!-- 브라우저가 옛 data.js를 10분간 들고 있지 않게 매번 새로 받는다 -->
+<script>document.write(`<script src="data.js?t=${Date.now()}"><\/script><script src="weeks.js?t=${Date.now()}"><\/script>`);</script>
 <script>
 const DECKS = (window.CARDNEWS || []).slice();
 const $ = id => document.getElementById(id);
