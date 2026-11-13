@@ -117,7 +117,9 @@ function noteCover(c, d) {
   <div class="t" style="position:absolute;left:0;right:0;top:${MID}px;transform:translateY(-50%);text-align:center;font-size:${c.size || 64}px;line-height:1.32">
     <span id="cvt" style="display:inline-block;position:relative">${logo}${rich(c.title)}</span></div>
   <svg style="position:absolute;inset:0" width="${W}" height="${H}"><line id="cvl" x1="0" y1="${MID}" x2="${W}" y2="${MID}" stroke="#141312" stroke-width="3.2"/></svg>
-  <script>(document.fonts?document.fonts.ready:Promise.resolve()).then(()=>{const t=document.getElementById('cvt').getBoundingClientRect();document.getElementById('cvl').setAttribute('x1',(t.right+24).toFixed(1));});</script>`,
+  <script>(document.fonts?document.fonts.ready:Promise.resolve()).then(()=>{const s=document.getElementById('cvt');let t=s.getBoundingClientRect();
+    if(t.left<70||t.right>${W}-60){s.style.maxWidth='${W - 2 * MX - 80}px';t=s.getBoundingClientRect();}   // 길어서 로고·선이 잘리면 두 줄로 (2026-11-13 시영)
+    document.getElementById('cvl').setAttribute('x1',(t.right+24).toFixed(1));});</script>`,
   { brand: d.brand });
 }
 
@@ -167,7 +169,9 @@ function noteCta(c, d) {
 
 export const types = { noteCover, noteMap, noteItem, noteEnd, noteCta };
 // 글꼴 바꾸기: 덱에 font: 'pretendard' → 고딕(Pretendard). 기본은 명조(Noto Serif KR)
-const SANS = `<style>@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+// 글꼴 파일은 저장소 안에 둔다 — 클라우드 라우틴은 CDN이 막혀 기본 고딕으로 바뀌었다(2026-11-13)
+const PRETENDARD = new URL('./assets/PretendardVariable.woff2', import.meta.url).href;
+const SANS = `<style>@font-face{font-family:'Pretendard Variable';font-weight:45 920;font-style:normal;font-display:block;src:url('${PRETENDARD}') format('woff2-variations')}
 body{font-family:'Pretendard Variable',Pretendard,sans-serif}
 .t{font-weight:650;letter-spacing:-.035em}.b{font-weight:450;letter-spacing:-.025em}.foot{font-weight:500}
 .ink,svg.marks{transform:translateY(2.5px)}  /* 고딕은 글자 상자가 위로 2.5px 쏠림 → PNG로 재서 보정 */</style>`;
