@@ -4,7 +4,7 @@ export default {
   brand: '흰지로의 트렌드 노트', theme: 'note', big: true, font: 'pretendard',
   src: { creator: 'YouTube 고객센터', title: 'YouTube Shorts monetization policies' },
   credit: '© YouTube',
-  date: '2026-11-20', status: '초안',
+  date: '2026-11-20', status: '검수완료',
   inkW: 900,     // 본문 48px 가장 긴 줄 — PNG로 잼
   blockW: 960,   // 48px 본문이 꺾이지 않게 상자 폭 넓힘
   lh: 1.62,      // 줄 간격 살짝 좁혀 위아래에 맞춤

@@ -4,7 +4,7 @@ export default {
   title: '유튜브가 날 밀어주기 시작했다는 신호',
   brand: '흰지로의 트렌드 노트', theme: 'note', big: true, font: 'pretendard',
   src: { creator: 'ClickTheory', title: '12 Signs YouTube Is About to Push Your Channel' },
-  date: '2026-11-22', status: '초안',
+  date: '2026-11-22', status: '검수완료',
   inkW: 900,
   blockW: 960,
   lh: 1.62,

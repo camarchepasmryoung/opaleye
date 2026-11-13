@@ -1,4 +1,4 @@
-// build.mjs가 만든 파일 — 직접 고치지 않는다 (2026-11-13T02:51:10.196Z)
+// build.mjs가 만든 파일 — 직접 고치지 않는다 (2026-11-13T02:55:43.678Z)
 window.CARDNEWS = [
  {
   "variants": {},
@@ -214,7 +214,7 @@ window.CARDNEWS = [
   "id": "2026-11-16_after-upload",
   "date": "2026-11-16",
   "title": "업로드 직후 체크리스트 5가지",
-  "status": "초안",
+  "status": "검수완료",
   "theme": "note",
   "source": {
    "channel": "YT UNLOCKED",
@@ -241,7 +241,7 @@ window.CARDNEWS = [
   "id": "2026-11-17_faceless-settings",
   "date": "2026-11-17",
   "title": "얼굴 없는 채널에서 바꾼 설정 3가지",
-  "status": "초안",
+  "status": "검수완료",
   "theme": "note",
   "source": {
    "channel": "Chiamaka Okoli",
@@ -266,7 +266,7 @@ window.CARDNEWS = [
   "id": "2026-11-18_views-mistakes",
   "date": "2026-11-18",
   "title": "조회수가 안 나오는 이유 4가지",
-  "status": "초안",
+  "status": "검수완료",
   "theme": "note",
   "source": {
    "channel": "Jay Bea",
@@ -292,7 +292,7 @@ window.CARDNEWS = [
   "id": "2026-11-19_first-1000-test",
   "date": "2026-11-19",
   "title": "첫 1,000명은 테스트 기간이에요",
-  "status": "초안",
+  "status": "검수완료",
   "theme": "note",
   "source": {
    "channel": "ClickTheory",
@@ -318,7 +318,7 @@ window.CARDNEWS = [
   "id": "2026-11-20_shorts-monetization-2027",
   "date": "2026-11-20",
   "title": "쇼츠 수익, 1,000만 회를 못 채우면",
-  "status": "초안",
+  "status": "검수완료",
   "theme": "note",
   "source": {
    "channel": "YouTube 고객센터",
@@ -344,7 +344,7 @@ window.CARDNEWS = [
   "id": "2026-11-21_focus-circle",
   "date": "2026-11-21",
   "title": "유튜브는 생각보다 단순해요",
-  "status": "초안",
+  "status": "검수완료",
   "theme": "note",
   "source": {
    "channel": "Brian G. Johnson TV",
@@ -370,7 +370,7 @@ window.CARDNEWS = [
   "id": "2026-11-22_growth-signals",
   "date": "2026-11-22",
   "title": "유튜브가 날 밀어주기 시작했다는 신호",
-  "status": "초안",
+  "status": "검수완료",
   "theme": "note",
   "source": {
    "channel": "ClickTheory",

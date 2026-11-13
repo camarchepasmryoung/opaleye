@@ -25,3 +25,5 @@
 ## 명령
 - 렌더: `node cardnews/template/render.mjs cardnews/decks/<폴더>` (덱의 `theme` 사용, `--theme`로 덮어쓰기)
 - 대시보드 갱신: `node cardnews/dashboard/build.mjs`
+- Aside 예약(원클릭): `node cardnews/aside.mjs <시작일> <끝일>` → 검수완료 덱 이미지를 `~/.aside/u/0/cardnews_upload/`로 복사 + `HANDOFF_aside_prompt.txt` 생성 → `aside --permission full-access "$(cat cardnews/HANDOFF_aside_prompt.txt)"`. 같은 날짜에 덱이 2개면 멈춘다
+- 글꼴은 `template/assets/PretendardVariable.woff2`(저장소 안). 못 불러오면 render.mjs가 멈춘다

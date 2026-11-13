@@ -32,6 +32,7 @@ const fix = o => {
 const checkWrap = (html) => {
   const tmp = join(outDir, `_wrapchk.html`);
   writeFileSync(tmp, html.replace('</body>', `<script>document.fonts.ready.then(()=>{
+    if (/Pretendard/.test(getComputedStyle(document.body).fontFamily) && ![...document.fonts].some(f => /Pretendard/.test(f.family) && f.status === 'loaded')) { document.title = 'NOFONT'; return; }
     const b = document.querySelector('.wrapchk');
     if (!b) { document.title = 'NA'; return; }
     const prevWS = b.style.whiteSpace; b.style.whiteSpace = 'nowrap';
@@ -60,6 +61,8 @@ deck.cards.forEach((c, i) => {
   const png = join(outDir, `card-${nn}.png`);
   const base = c.size || 48;
   let body = render(c, deck, i, n, png);
+  // 글꼴 검사 (2026-11-13): Pretendard를 못 불러오면 다른 글꼴로 찍히므로 렌더를 멈춘다
+  if (i === 0 && checkWrap(body) === 'NOFONT') { console.error('❌ Pretendard 글꼴을 못 불러옴 — 다른 글꼴로 찍히니 렌더 중단 (template/assets/PretendardVariable.woff2 확인)'); process.exit(1); }
   if ('size' in c) {
     let size = base;
     while (checkWrap(body) === 'WRAP' && size > 30) {
