@@ -16,6 +16,8 @@ jobs:
           WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_CARDNEWS }}
           MSG: ${{ github.event.head_commit.message }}
         run: |
+          # [notify]는 커밋 첫 줄에 있을 때만 (본문에 설명으로 적힌 건 무시)
+          if [ "${{ github.event_name }}" = push ] && ! printf '%s\n' "$MSG" | head -1 | grep -qF '[notify]'; then echo skip; exit 0; fi
           warn=$(printf '%s\n' "$MSG" | grep '^⚠️' || true)
           body=$(printf '**다음 주 카드뉴스 다 만들었어요 확인해 주세요**\n\n👉 https://camarchepasmryoung.github.io/opaleye/cardnews/dashboard/')
           [ -n "$warn" ] && body=$(printf '%s\n\n%s' "$body" "$warn")
