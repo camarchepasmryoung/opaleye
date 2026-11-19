@@ -10,5 +10,10 @@ window.CARDNEWS_WEEKS = {
   "zip": "weeks/%ED%9D%B0%EC%A7%80%EB%A1%9C_%EC%B9%B4%EB%93%9C%EB%89%B4%EC%8A%A4_2026-W47.zip",
   "count": 7,
   "skip": []
+ },
+ "2026-W48": {
+  "zip": "weeks/%ED%9D%B0%EC%A7%80%EB%A1%9C_%EC%B9%B4%EB%93%9C%EB%89%B4%EC%8A%A4_2026-W48.zip",
+  "count": 7,
+  "skip": []
  }
 };

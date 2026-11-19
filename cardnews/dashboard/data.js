@@ -1,4 +1,4 @@
-// build.mjs가 만든 파일 — 직접 고치지 않는다 (2026-11-13T02:55:43.678Z)
+// build.mjs가 만든 파일 — 직접 고치지 않는다 (2026-11-19T22:28:00.262Z)
 window.CARDNEWS = [
  {
   "variants": {},
@@ -389,5 +389,189 @@ window.CARDNEWS = [
    "../decks/2026-11-22_growth-signals/out-note/card-07.png"
   ],
   "captions": "# 2026-11-22 · 유튜브가 날 밀어주기 시작했다는 신호 — 플랫폼별 글\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n조회수 100~200에 갇혀 있다고 채널이 안 되는 게 아닐 수 있어요.\n클릭시어리가 꼽은, 터지기 직전 채널에서 먼저 보인다는 신호 12가지 중 4가지를 정리했어요.\n여러분 채널엔 몇 개나 보이세요?\n\n#유튜브성장 #유튜브알고리즘 #작은채널\n\n출처: ClickTheory 「12 Signs YouTube Is About to Push Your Channel」\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-11-23_stop-pushing/2026-11-23_stop-pushing.zip",
+  "id": "2026-11-23_stop-pushing",
+  "date": "2026-11-23",
+  "title": "유튜브가 영상을 그만 밀어주는 이유 5가지",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "Murray Frost",
+   "video": "https://www.youtube.com/watch?v=E690vB3Pw78"
+  },
+  "facts": "ok",
+  "post": "영상을 올렸는데 유튜브가 갑자기 안 밀어준다면, 이 중 하나 때문일 수 있어요.\n유튜브 코치 Murray Frost가 꼽은 7가지 실수 중 5가지를 정리했어요.\n여러분은 몇 가지나 해당되세요? 댓글로 알려 주세요.\n\n#유튜브알고리즘 #유튜브실수 #작은채널",
+  "cover": "유튜브가 ==그만 밀어주는== 진짜 이유",
+  "slides": [
+   "../decks/2026-11-23_stop-pushing/out-note/card-01.png",
+   "../decks/2026-11-23_stop-pushing/out-note/card-02.png",
+   "../decks/2026-11-23_stop-pushing/out-note/card-03.png",
+   "../decks/2026-11-23_stop-pushing/out-note/card-04.png",
+   "../decks/2026-11-23_stop-pushing/out-note/card-05.png",
+   "../decks/2026-11-23_stop-pushing/out-note/card-06.png",
+   "../decks/2026-11-23_stop-pushing/out-note/card-07.png",
+   "../decks/2026-11-23_stop-pushing/out-note/card-08.png"
+  ],
+  "captions": "# 2026-11-23 · 유튜브가 영상을 그만 밀어주는 이유 5가지 — 플랫폼별 글\n\n## 인스타그램\n영상을 올렸는데 유튜브가 갑자기 안 밀어준다면, 이 중 하나 때문일 수 있어요.\n\n유튜브 코치 Murray Frost가 꼽은 7가지 실수 중 5가지를 정리했어요.\n\n01 올리자마자 공개하지 마세요\n02 아동용 설정이 조용히 죽여요\n03 처음 며칠로 판단하지 마세요\n04 잘되는 영상은 그대로 두세요\n05 끝인사 대신 다음 영상을\n\n여러분은 몇 가지나 해당되세요? 댓글로 알려 주세요.\n\n출처: Murray Frost 「7 Mistakes That Make YouTube Stop Pushing Your Videos」\n\n#유튜브 #유튜브팁 #유튜브알고리즘 #작은채널 #유튜브초보 #유튜브성장\n\n## 스레드\n유튜브가 갑자기 영상을 안 밀어준다면, 이 중 하나 때문일 수 있어요.\n바로 공개하기, 아동용 설정 방치, 너무 빠른 판단, 잘되는 영상 건드리기, 끝인사만 하고 끝내기.\n여러분은 몇 가지나 해당되세요?\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n영상을 올렸는데 유튜브가 갑자기 안 밀어준다면, 이 중 하나 때문일 수 있어요.\n유튜브 코치 Murray Frost가 꼽은 7가지 실수 중 5가지를 정리했어요.\n여러분은 몇 가지나 해당되세요? 댓글로 알려 주세요.\n\n#유튜브알고리즘 #유튜브실수 #작은채널\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-11-24_seven-things-i-fixed/2026-11-24_seven-things-i-fixed.zip",
+  "id": "2026-11-24_seven-things-i-fixed",
+  "date": "2026-11-24",
+  "title": "유튜브, 그만두고 싶었던 순간들 5가지",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "Madeline Hegedus Too",
+   "video": "https://www.youtube.com/watch?v=Gbid3govh34"
+  },
+  "facts": "ok",
+  "post": "올리는데도 조회수가 20회뿐이던 시절, 포기하고 싶었대요.\n유튜버 Madeline Hegedus가 꼽은, 성장을 막았던 습관 7가지 중 5가지를 정리했어요.\n여러분은 지금 어떤 순간을 지나고 있나요? 댓글로 알려 주세요.\n\n#유튜브초보 #유튜브실수 #작은채널",
+  "cover": "유튜브, ==그만두고 싶었던== 순간들",
+  "slides": [
+   "../decks/2026-11-24_seven-things-i-fixed/out-note/card-01.png",
+   "../decks/2026-11-24_seven-things-i-fixed/out-note/card-02.png",
+   "../decks/2026-11-24_seven-things-i-fixed/out-note/card-03.png",
+   "../decks/2026-11-24_seven-things-i-fixed/out-note/card-04.png",
+   "../decks/2026-11-24_seven-things-i-fixed/out-note/card-05.png",
+   "../decks/2026-11-24_seven-things-i-fixed/out-note/card-06.png",
+   "../decks/2026-11-24_seven-things-i-fixed/out-note/card-07.png",
+   "../decks/2026-11-24_seven-things-i-fixed/out-note/card-08.png"
+  ],
+  "captions": "# 2026-11-24 · 유튜브, 그만두고 싶었던 순간들 5가지 — 플랫폼별 글\n\n## 인스타그램\n올리는데도 조회수가 20회뿐이던 시절, 포기하고 싶었대요.\n\n유튜버 Madeline Hegedus가 꼽은, 성장을 막았던 습관 7가지 중 5가지를 정리했어요.\n\n01 쪽팔림이 무서워서\n02 너무 멀리 생각하기\n03 그냥 취미라고 말하기\n04 너무 많이 올리기\n05 안 좋은 날 포기하기\n\n여러분은 지금 어떤 순간을 지나고 있나요? 댓글로 알려 주세요.\n\n출처: Madeline Hegedus Too 「I failed at YouTube, until I did this」\n\n#유튜브 #유튜브팁 #유튜브초보 #작은채널 #유튜브성장 #유튜브실수\n\n## 스레드\n조회수 20회뿐이던 시절, 포기하고 싶었대요.\n쪽팔림이 무서워서, 너무 멀리 생각해서, 그냥 취미라고 말해서, 너무 많이 올려서, 안 좋은 날 포기해서.\n여러분은 지금 어떤 순간을 지나고 있나요?\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n올리는데도 조회수가 20회뿐이던 시절, 포기하고 싶었대요.\n유튜버 Madeline Hegedus가 꼽은, 성장을 막았던 습관 7가지 중 5가지를 정리했어요.\n여러분은 지금 어떤 순간을 지나고 있나요? 댓글로 알려 주세요.\n\n#유튜브초보 #유튜브실수 #작은채널\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-11-25_party-line-editing/2026-11-25_party-line-editing.zip",
+  "id": "2026-11-25_party-line-editing",
+  "date": "2026-11-25",
+  "title": "내 영상이 지루한 이유, 오디오였어요",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "Casey Faris",
+   "video": "https://www.youtube.com/watch?v=M6JrbS7FSXM"
+  },
+  "facts": "ok",
+  "post": "영상이 자꾸 지루하게 느껴진다면, 화면이 아니라 소리를 의심해 보세요.\n편집 코치 Casey Faris가 짚은 '파티 라인' 개념과 빈 공간을 채우는 두 가지 방법을 정리했어요.\n여러분 영상에도 소리가 텅 빈 구간이 있나요? 댓글로 알려 주세요.\n\n#유튜브편집 #영상편집팁 #작은채널",
+  "cover": "내 영상이 ==지루한 이유==, 오디오였어요",
+  "slides": [
+   "../decks/2026-11-25_party-line-editing/out-note/card-01.png",
+   "../decks/2026-11-25_party-line-editing/out-note/card-02.png",
+   "../decks/2026-11-25_party-line-editing/out-note/card-03.png",
+   "../decks/2026-11-25_party-line-editing/out-note/card-04.png",
+   "../decks/2026-11-25_party-line-editing/out-note/card-05.png",
+   "../decks/2026-11-25_party-line-editing/out-note/card-06.png",
+   "../decks/2026-11-25_party-line-editing/out-note/card-07.png"
+  ],
+  "captions": "# 2026-11-25 · 내 영상이 지루한 이유, 오디오였어요 — 플랫폼별 글\n\n## 인스타그램\n영상이 자꾸 지루하게 느껴진다면, 화면이 아니라 소리를 의심해 보세요.\n\n편집 코치 Casey Faris가 짚은 '파티 라인' 개념과 빈 공간을 채우는 두 가지 방법을 정리했어요.\n\n01 파티 라인이란\n02 빈 공간이 지루함을 만든다\n03 보이스오버로 채우기\n04 음악 볼륨으로 채우기\n\n여러분 영상에도 소리가 텅 빈 구간이 있나요? 댓글로 알려 주세요.\n\n출처: Casey Faris 「#1 Tip to Make Your YouTube Vids Less BORING in DaVinci Resolve!」\n\n#유튜브 #영상편집 #유튜브편집팁 #작은채널 #편집꿀팁 #유튜브성장\n\n## 스레드\n영상이 지루하게 느껴진다면 화면이 아니라 소리를 의심해 보세요.\n편집 코치 Casey Faris가 말하는 '파티 라인', 음악을 줄인 구간이 텅 비는 게 원인이래요.\n보이스오버를 넣거나 음악 볼륨을 다시 올려서 채우면 된대요.\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n영상이 자꾸 지루하게 느껴진다면, 화면이 아니라 소리를 의심해 보세요.\n편집 코치 Casey Faris가 짚은 '파티 라인' 개념과 빈 공간을 채우는 두 가지 방법을 정리했어요.\n여러분 영상에도 소리가 텅 빈 구간이 있나요? 댓글로 알려 주세요.\n\n#유튜브편집 #영상편집팁 #작은채널\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-11-26_memorable-not-viral/2026-11-26_memorable-not-viral.zip",
+  "id": "2026-11-26_memorable-not-viral",
+  "date": "2026-11-26",
+  "title": "조회수보다 중요한 건, 다시 찾아오게 만드는 것",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "Kaius Vun",
+   "video": "https://www.youtube.com/watch?v=axgmCyk__04"
+  },
+  "facts": "ok",
+  "post": "구독자 4천 명대 채널에, 합쳐서 6,500만 구독자가 넘는 유튜버 44명이 DM을 보냈대요.\n편집자 겸 크리에이터 Kaius Vun이 꼽은 '기억에 남는 영상'의 조건 3가지를 정리했어요.\n여러분 영상은 조회수, 댓글 중 뭐가 더 잘 나오나요? 댓글로 알려 주세요.\n\n#유튜브편집 #유튜브성장 #작은채널",
+  "cover": "구독자 ==4천 명대== 채널에 몰려온 거물들",
+  "slides": [
+   "../decks/2026-11-26_memorable-not-viral/out-note/card-01.png",
+   "../decks/2026-11-26_memorable-not-viral/out-note/card-02.png",
+   "../decks/2026-11-26_memorable-not-viral/out-note/card-03.png",
+   "../decks/2026-11-26_memorable-not-viral/out-note/card-04.png",
+   "../decks/2026-11-26_memorable-not-viral/out-note/card-05.png",
+   "../decks/2026-11-26_memorable-not-viral/out-note/card-06.png",
+   "../decks/2026-11-26_memorable-not-viral/out-note/card-07.png"
+  ],
+  "captions": "# 2026-11-26 · 조회수보다 중요한 건, 다시 찾아오게 만드는 것 — 플랫폼별 글\n\n## 인스타그램\n구독자 4천 명대 채널에, 합쳐서 6,500만 구독자가 넘는 유튜버 44명이 DM을 보냈대요.\n\n편집자 겸 크리에이터 Kaius Vun이 꼽은 '기억에 남는 영상'의 조건 3가지를 정리했어요.\n\n01 조회수보다 댓글\n02 첫째, 개성\n03 둘째, 각도\n04 셋째, 노력\n\n여러분 영상은 조회수, 댓글 중 뭐가 더 잘 나오나요? 댓글로 알려 주세요.\n\n출처: Kaius Vun 「My Channel is Tiny, Why 65M+ YouTubers DM'd Me」\n\n#유튜브 #유튜브편집 #유튜브성장 #작은채널 #영상편집 #유튜브팁\n\n## 스레드\n구독자 4천 명대 채널에, 거물 유튜버 44명이 DM을 보냈대요.\n조회수보다 댓글, 개성, 각도, 노력. Kaius Vun이 꼽은 '기억에 남는 영상'의 조건이래요.\n여러분 영상은 조회수, 댓글 중 뭐가 더 잘 나오나요?\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n구독자 4천 명대 채널에, 합쳐서 6,500만 구독자가 넘는 유튜버 44명이 DM을 보냈대요.\n편집자 겸 크리에이터 Kaius Vun이 꼽은 '기억에 남는 영상'의 조건 3가지를 정리했어요.\n여러분 영상은 조회수, 댓글 중 뭐가 더 잘 나오나요? 댓글로 알려 주세요.\n\n#유튜브편집 #유튜브성장 #작은채널\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-11-27_studio-insights/2026-11-27_studio-insights.zip",
+  "id": "2026-11-27_studio-insights",
+  "date": "2026-11-27",
+  "title": "유튜브 스튜디오, 애널리틱스가 사라졌어요",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "vidIQ",
+   "video": "https://www.youtube.com/watch?v=42D94fDC1GE"
+  },
+  "facts": "ok",
+  "post": "유튜브 스튜디오에서 '애널리틱스' 탭을 못 찾겠다면, 이름이 '인사이트'로 바뀌어서 그래요.\n유튜브 고객센터가 2026년 11월 13일부터 확인한 변경 사항을 정리했어요.\n여러분 스튜디오는 벌써 바뀌었나요? 댓글로 알려 주세요.\n\n#유튜브스튜디오 #유튜브업데이트 #유튜브분석",
+  "cover": "유튜브 스튜디오, ==애널리틱스가 사라졌어요==",
+  "slides": [
+   "../decks/2026-11-27_studio-insights/out-note/card-01.png",
+   "../decks/2026-11-27_studio-insights/out-note/card-02.png",
+   "../decks/2026-11-27_studio-insights/out-note/card-03.png",
+   "../decks/2026-11-27_studio-insights/out-note/card-04.png",
+   "../decks/2026-11-27_studio-insights/out-note/card-05.png",
+   "../decks/2026-11-27_studio-insights/out-note/card-06.png",
+   "../decks/2026-11-27_studio-insights/out-note/card-07.png"
+  ],
+  "captions": "# 2026-11-27 · 유튜브 스튜디오, 애널리틱스가 사라졌어요 — 플랫폼별 글\n\n## 인스타그램\n유튜브 스튜디오에서 '애널리틱스' 탭을 못 찾겠다면, 이름이 '인사이트'로 바뀌어서 그래요.\n\n유튜브 고객센터가 2026년 11월 13일부터 확인한 변경 사항을 정리했어요.\n\n01 이름이 바뀌었어요\n02 패널 단위로 묶였어요\n03 참여 조회수가 숨었어요\n04 AI 요약이 생겼어요\n\n여러분 스튜디오는 벌써 바뀌었나요? 댓글로 알려 주세요.\n\n출처: YouTube 고객센터 · vidIQ 「YouTube Launches Massive Creator Update」\n\n#유튜브 #유튜브스튜디오 #유튜브업데이트 #유튜브분석 #유튜브팁 #유튜브뉴스\n\n## 스레드\n유튜브 스튜디오 애널리틱스 탭이 안 보인다면, '인사이트'로 이름이 바뀐 거예요.\n11월 13일부터 데스크톱에 적용됐고, 참여 조회수 같은 지표는 패널 안쪽으로 숨었대요.\nAI 요약 카드도 새로 생겼고요.\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n유튜브 스튜디오에서 '애널리틱스' 탭을 못 찾겠다면, 이름이 '인사이트'로 바뀌어서 그래요.\n유튜브 고객센터가 2026년 11월 13일부터 확인한 변경 사항을 정리했어요.\n여러분 스튜디오는 벌써 바뀌었나요? 댓글로 알려 주세요.\n\n#유튜브스튜디오 #유튜브업데이트 #유튜브분석\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-11-28_browse-vs-search/2026-11-28_browse-vs-search.zip",
+  "id": "2026-11-28_browse-vs-search",
+  "date": "2026-11-28",
+  "title": "내 조회수는, 검색일까 둘러보기일까",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "Kathy Gets It Together",
+   "video": "https://www.youtube.com/watch?v=-NSs1Uk6xXI"
+  },
+  "facts": "ok",
+  "post": "조회수 대부분이 '검색'이 아니라 '둘러보기'에서 온다는 걸 아시나요?\n크리에이터 Kathy Gets It Together가 자기 채널 분석으로 확인한 둘러보기와 검색의 차이를 정리했어요.\n여러분 영상은 어디서 더 많이 보나요? 댓글로 알려 주세요.\n\n#유튜브분석 #유튜브조회수 #작은채널",
+  "cover": "내 조회수는, ==어디서 왔을까==",
+  "slides": [
+   "../decks/2026-11-28_browse-vs-search/out-note/card-01.png",
+   "../decks/2026-11-28_browse-vs-search/out-note/card-02.png",
+   "../decks/2026-11-28_browse-vs-search/out-note/card-03.png",
+   "../decks/2026-11-28_browse-vs-search/out-note/card-04.png",
+   "../decks/2026-11-28_browse-vs-search/out-note/card-05.png",
+   "../decks/2026-11-28_browse-vs-search/out-note/card-06.png",
+   "../decks/2026-11-28_browse-vs-search/out-note/card-07.png"
+  ],
+  "captions": "# 2026-11-28 · 내 조회수는, 검색일까 둘러보기일까 — 플랫폼별 글\n\n## 인스타그램\n조회수 대부분이 '검색'이 아니라 '둘러보기'에서 온다는 걸 아시나요?\n\n크리에이터 Kathy Gets It Together가 자기 채널 분석으로 확인한 둘러보기와 검색의 차이를 정리했어요.\n\n01 검색 vs 둘러보기\n02 튜토리얼도 둘러보기로\n03 제목·썸네일의 역할\n04 영상마다 다른 일을\n\n여러분 영상은 어디서 더 많이 보나요? 댓글로 알려 주세요.\n\n출처: Kathy Gets It Together 「If You Don't Understand Browse, You Don't Understand Views」\n\n#유튜브 #유튜브분석 #유튜브조회수 #작은채널 #유튜브알고리즘 #유튜브팁\n\n## 스레드\n내 조회수, 검색에서 왔을까요 둘러보다 왔을까요?\nKathy Gets It Together가 자기 채널을 분석해보니 튜토리얼 영상도 81%가 둘러보기였대요.\n영상마다 할 일이 다르다는 것도 깨달았다고 해요.\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n조회수 대부분이 '검색'이 아니라 '둘러보기'에서 온다는 걸 아시나요?\n크리에이터 Kathy Gets It Together가 자기 채널 분석으로 확인한 둘러보기와 검색의 차이를 정리했어요.\n여러분 영상은 어디서 더 많이 보나요? 댓글로 알려 주세요.\n\n#유튜브분석 #유튜브조회수 #작은채널\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-11-29_pull-not-push/2026-11-29_pull-not-push.zip",
+  "id": "2026-11-29_pull-not-push",
+  "date": "2026-11-29",
+  "title": "유튜브는, 당기는 플랫폼이에요",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "Collin Michael",
+   "video": "https://www.youtube.com/watch?v=wiKpHJl3jkQ"
+  },
+  "facts": "ok",
+  "post": "유튜브가 영상을 '밀어준다'고 생각하면, 이미 방향이 틀렸을 수 있어요.\n유튜브 코치 Collin Michael이 꼽은, 작은 채널 수익화를 막는 습관 중 4가지를 정리했어요.\n여러분은 영상 주제를 감으로 고르나요, 데이터로 고르나요? 댓글로 알려 주세요.\n\n#유튜브수익화 #유튜브알고리즘 #작은채널",
+  "cover": "유튜브는, ==당기는 플랫폼==이에요",
+  "slides": [
+   "../decks/2026-11-29_pull-not-push/out-note/card-01.png",
+   "../decks/2026-11-29_pull-not-push/out-note/card-02.png",
+   "../decks/2026-11-29_pull-not-push/out-note/card-03.png",
+   "../decks/2026-11-29_pull-not-push/out-note/card-04.png",
+   "../decks/2026-11-29_pull-not-push/out-note/card-05.png",
+   "../decks/2026-11-29_pull-not-push/out-note/card-06.png",
+   "../decks/2026-11-29_pull-not-push/out-note/card-07.png"
+  ],
+  "captions": "# 2026-11-29 · 유튜브는, 당기는 플랫폼이에요 — 플랫폼별 글\n\n## 인스타그램\n유튜브가 영상을 '밀어준다'고 생각하면, 이미 방향이 틀렸을 수 있어요.\n\n유튜브 코치 Collin Michael이 꼽은, 작은 채널 수익화를 막는 습관 중 4가지를 정리했어요.\n\n01 미는 게 아니라 당기는\n02 감 말고 데이터로\n03 한 편 말고 몰아보기\n04 양도 필요해요\n\n여러분은 영상 주제를 감으로 고르나요, 데이터로 고르나요? 댓글로 알려 주세요.\n\n출처: Collin Michael 「This Stops 90% of Small Channels From Getting Monetized」\n\n#유튜브 #유튜브수익화 #유튜브알고리즘 #작은채널 #유튜브팁 #유튜브성장\n\n## 스레드\n유튜브가 영상을 '밀어준다'고 생각하면 방향이 틀렸을 수 있대요.\n유튜브는 미는 게 아니라 비슷한 걸 보던 시청자에게 당겨 보여주는 구조래요.\n감 말고 데이터로 주제를 고르고, 한 편이 아니라 몰아보게 만들라고 해요.\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n유튜브가 영상을 '밀어준다'고 생각하면, 이미 방향이 틀렸을 수 있어요.\n유튜브 코치 Collin Michael이 꼽은, 작은 채널 수익화를 막는 습관 중 4가지를 정리했어요.\n여러분은 영상 주제를 감으로 고르나요, 데이터로 고르나요? 댓글로 알려 주세요.\n\n#유튜브수익화 #유튜브알고리즘 #작은채널\n"
  }
 ];
