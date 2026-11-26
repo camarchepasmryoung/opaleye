@@ -1,4 +1,4 @@
-// build.mjs가 만든 파일 — 직접 고치지 않는다 (2026-11-19T22:28:00.262Z)
+// build.mjs가 만든 파일 — 직접 고치지 않는다 (2026-11-26T22:24:29.032Z)
 window.CARDNEWS = [
  {
   "variants": {},
@@ -573,5 +573,182 @@ window.CARDNEWS = [
    "../decks/2026-11-29_pull-not-push/out-note/card-07.png"
   ],
   "captions": "# 2026-11-29 · 유튜브는, 당기는 플랫폼이에요 — 플랫폼별 글\n\n## 인스타그램\n유튜브가 영상을 '밀어준다'고 생각하면, 이미 방향이 틀렸을 수 있어요.\n\n유튜브 코치 Collin Michael이 꼽은, 작은 채널 수익화를 막는 습관 중 4가지를 정리했어요.\n\n01 미는 게 아니라 당기는\n02 감 말고 데이터로\n03 한 편 말고 몰아보기\n04 양도 필요해요\n\n여러분은 영상 주제를 감으로 고르나요, 데이터로 고르나요? 댓글로 알려 주세요.\n\n출처: Collin Michael 「This Stops 90% of Small Channels From Getting Monetized」\n\n#유튜브 #유튜브수익화 #유튜브알고리즘 #작은채널 #유튜브팁 #유튜브성장\n\n## 스레드\n유튜브가 영상을 '밀어준다'고 생각하면 방향이 틀렸을 수 있대요.\n유튜브는 미는 게 아니라 비슷한 걸 보던 시청자에게 당겨 보여주는 구조래요.\n감 말고 데이터로 주제를 고르고, 한 편이 아니라 몰아보게 만들라고 해요.\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n유튜브가 영상을 '밀어준다'고 생각하면, 이미 방향이 틀렸을 수 있어요.\n유튜브 코치 Collin Michael이 꼽은, 작은 채널 수익화를 막는 습관 중 4가지를 정리했어요.\n여러분은 영상 주제를 감으로 고르나요, 데이터로 고르나요? 댓글로 알려 주세요.\n\n#유튜브수익화 #유튜브알고리즘 #작은채널\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-11-30_shorts-trailer/2026-11-30_shorts-trailer.zip",
+  "id": "2026-11-30_shorts-trailer",
+  "date": "2026-11-30",
+  "title": "롱폼은 영화, 쇼츠는 예고편이에요",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "life and numbers",
+   "video": "https://www.youtube.com/watch?v=GSkjVyg6LW4"
+  },
+  "facts": "ok",
+  "post": "쇼츠만으로는 수익화 조건(연 4,000시간)을 채우기 거의 불가능하대요.\n9.1만 구독 유튜버 Simone(life and numbers)이 쓰는 비유, 롱폼은 영화 쇼츠는 예고편을 정리했어요.\n여러분은 쇼츠·롱폼을 어떤 비율로 올리고 있나요?\n\n#유튜브쇼츠 #롱폼전략 #유튜브수익화",
+  "cover": "롱폼은 영화, 쇼츠는 ==예고편==이에요",
+  "slides": [
+   "../decks/2026-11-30_shorts-trailer/out-note/card-01.png",
+   "../decks/2026-11-30_shorts-trailer/out-note/card-02.png",
+   "../decks/2026-11-30_shorts-trailer/out-note/card-03.png",
+   "../decks/2026-11-30_shorts-trailer/out-note/card-04.png",
+   "../decks/2026-11-30_shorts-trailer/out-note/card-05.png",
+   "../decks/2026-11-30_shorts-trailer/out-note/card-06.png",
+   "../decks/2026-11-30_shorts-trailer/out-note/card-07.png"
+  ],
+  "captions": "# 2026-11-30 · 롱폼은 영화, 쇼츠는 예고편이에요 — 플랫폼별 글\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n쇼츠만으로는 수익화 조건(연 4,000시간)을 채우기 거의 불가능하대요.\n9.1만 구독 유튜버 Simone(life and numbers)이 쓰는 비유, 롱폼은 영화 쇼츠는 예고편을 정리했어요.\n여러분은 쇼츠·롱폼을 어떤 비율로 올리고 있나요?\n\n#유튜브쇼츠 #롱폼전략 #유튜브수익화\n\n출처: life and numbers(Simone) 「if you don't start your YouTube channel now, you'll regret it」\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-12-01_small-channel-cheats/2026-12-01_small-channel-cheats.zip",
+  "id": "2026-12-01_small-channel-cheats",
+  "date": "2026-12-01",
+  "title": "구독자 적을 때만 쓸 수 있는 반칙 3가지",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "BogXD",
+   "video": "https://www.youtube.com/watch?v=MPrdxI2ibgg"
+  },
+  "facts": "ok",
+  "post": "구독자 적을 때는 '반칙'처럼 느껴지는 것들, 마음껏 써도 된대요.\n구독 60만 유튜버 Bog(BogXD)가 자기 채널 작을 때 썼던 전략 3가지를 정리했어요.\n여러분은 요즘 어떤 실험을 하고 있나요?\n\n#유튜브초보 #작은채널 #유튜브성장전략",
+  "cover": "구독자 적을 때 ==마음껏 써야== 할 반칙 3가지",
+  "slides": [
+   "../decks/2026-12-01_small-channel-cheats/out-note/card-01.png",
+   "../decks/2026-12-01_small-channel-cheats/out-note/card-02.png",
+   "../decks/2026-12-01_small-channel-cheats/out-note/card-03.png",
+   "../decks/2026-12-01_small-channel-cheats/out-note/card-04.png",
+   "../decks/2026-12-01_small-channel-cheats/out-note/card-05.png",
+   "../decks/2026-12-01_small-channel-cheats/out-note/card-06.png"
+  ],
+  "captions": "# 2026-12-01 · 구독자 적을 때만 쓸 수 있는 반칙 3가지 — 플랫폼별 글\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n구독자 적을 때는 '반칙'처럼 느껴지는 것들, 마음껏 써도 된대요.\n구독 60만 유튜버 Bog(BogXD)가 자기 채널 작을 때 썼던 전략 3가지를 정리했어요.\n여러분은 요즘 어떤 실험을 하고 있나요?\n\n#유튜브초보 #작은채널 #유튜브성장전략\n\n출처: BogXD 「3 (sneaky) strategies I'd abuse if I had a small YT channel」\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-12-02_subscribe-system/2026-12-02_subscribe-system.zip",
+  "id": "2026-12-02_subscribe-system",
+  "date": "2026-12-02",
+  "title": "구독을 부르는 법, 다르게 불러야 해요",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "Collin Michael",
+   "video": "https://www.youtube.com/watch?v=x5aZ0DnEL4w"
+  },
+  "facts": "ok",
+  "post": "\"구독 눌러 주세요\" 애니메이션만 넣는 거, 구독 부탁이 아니었대요.\n구독 38만 유튜버 Collin Michael이 쓰는 구독 유도법을 정리했어요.\n여러분 영상엔 구독할 '이유'가 들어가 있나요?\n\n#유튜브구독자 #유튜브성장 #엔드카드",
+  "cover": "\"구독 눌러 주세요\"가 ==안 통하는== 이유",
+  "slides": [
+   "../decks/2026-12-02_subscribe-system/out-note/card-01.png",
+   "../decks/2026-12-02_subscribe-system/out-note/card-02.png",
+   "../decks/2026-12-02_subscribe-system/out-note/card-03.png",
+   "../decks/2026-12-02_subscribe-system/out-note/card-04.png",
+   "../decks/2026-12-02_subscribe-system/out-note/card-05.png",
+   "../decks/2026-12-02_subscribe-system/out-note/card-06.png"
+  ],
+  "captions": "# 2026-12-02 · 구독을 부르는 법, 다르게 불러야 해요 — 플랫폼별 글\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n\"구독 눌러 주세요\" 애니메이션만 넣는 거, 구독 부탁이 아니었대요.\n구독 38만 유튜버 Collin Michael이 쓰는 구독 유도법을 정리했어요.\n여러분 영상엔 구독할 '이유'가 들어가 있나요?\n\n#유튜브구독자 #유튜브성장 #엔드카드\n\n출처: Collin Michael 「If nobody subscribes to your channel, do this.」\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-12-03_one-video-86-percent/2026-12-03_one-video-86-percent.zip",
+  "id": "2026-12-03_one-video-86-percent",
+  "date": "2026-12-03",
+  "title": "조회수 100만, 그중 86%가 영상 1개였어요",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "First Draft",
+   "video": "https://www.youtube.com/watch?v=cDzcOwsKlts"
+  },
+  "facts": "ok",
+  "post": "6개월 만에 조회수 100만, 그런데 86%가 영상 딱 1개였대요.\n17살 유튜버 First Draft가 직접 공개한 애널리틱스와 안 통했던 것·통했던 것을 정리했어요.\n여러분 채널에도 '혼자 다 하는' 영상이 있나요?\n\n#유튜브분석 #유튜브초보 #애널리틱스",
+  "cover": "조회수 100만… 그런데 ==영상 1개==가 다 했어요",
+  "slides": [
+   "../decks/2026-12-03_one-video-86-percent/out-note/card-01.png",
+   "../decks/2026-12-03_one-video-86-percent/out-note/card-02.png",
+   "../decks/2026-12-03_one-video-86-percent/out-note/card-03.png",
+   "../decks/2026-12-03_one-video-86-percent/out-note/card-04.png",
+   "../decks/2026-12-03_one-video-86-percent/out-note/card-05.png",
+   "../decks/2026-12-03_one-video-86-percent/out-note/card-06.png"
+  ],
+  "captions": "# 2026-12-03 · 조회수 100만, 그중 86%가 영상 1개였어요 — 플랫폼별 글\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n6개월 만에 조회수 100만, 그런데 86%가 영상 딱 1개였대요.\n17살 유튜버 First Draft가 직접 공개한 애널리틱스와 안 통했던 것·통했던 것을 정리했어요.\n여러분 채널에도 '혼자 다 하는' 영상이 있나요?\n\n#유튜브분석 #유튜브초보 #애널리틱스\n\n출처: First Draft 「I tried YouTube for 6 months. Here's what happened」\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-12-04_zero-revenue-fix/2026-12-04_zero-revenue-fix.zip",
+  "id": "2026-12-04_zero-revenue-fix",
+  "date": "2026-12-04",
+  "title": "구독 10만, 수익 0원 → 바꾼 두 가지",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "AI Biz PT",
+   "video": "https://www.youtube.com/watch?v=rNFO81-3oEI"
+  },
+  "facts": "ok",
+  "post": "구독 10만, 조회 2,900만인데 수익은 0원이었던 유튜버 이야기예요.\nAI Biz PT가 소개한 얼굴 없는 채널 사례, 판을 바꾼 두 가지를 정리했어요(수익 숫자는 본인 공개 기준).\n여러분 채널은 조회 대비 구독, 어느 정도인가요?\n\n#유튜브자동화 #얼굴없는유튜버 #유튜브수익화",
+  "cover": "구독 10만인데 수익 ==0원==이었대요",
+  "slides": [
+   "../decks/2026-12-04_zero-revenue-fix/out-note/card-01.png",
+   "../decks/2026-12-04_zero-revenue-fix/out-note/card-02.png",
+   "../decks/2026-12-04_zero-revenue-fix/out-note/card-03.png",
+   "../decks/2026-12-04_zero-revenue-fix/out-note/card-04.png",
+   "../decks/2026-12-04_zero-revenue-fix/out-note/card-05.png",
+   "../decks/2026-12-04_zero-revenue-fix/out-note/card-06.png"
+  ],
+  "captions": "# 2026-12-04 · 구독 10만, 수익 0원 → 바꾼 두 가지 — 플랫폼별 글\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n구독 10만, 조회 2,900만인데 수익은 0원이었던 유튜버 이야기예요.\nAI Biz PT가 소개한 얼굴 없는 채널 사례, 판을 바꾼 두 가지를 정리했어요(수익 숫자는 본인 공개 기준).\n여러분 채널은 조회 대비 구독, 어느 정도인가요?\n\n#유튜브자동화 #얼굴없는유튜버 #유튜브수익화\n\n출처: AI Biz PT 「유튜브 자동화, 얼굴 없는 역사 채널로 누적 5억 6천만 원 넘게」\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-12-05_nine-months-gained/2026-12-05_nine-months-gained.zip",
+  "id": "2026-12-05_nine-months-gained",
+  "date": "2026-12-05",
+  "title": "유튜브 9개월, 조회수 말고 남은 것",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "풀리다",
+   "video": "https://www.youtube.com/watch?v=Hsx5ts4YcIM"
+  },
+  "facts": "ok",
+  "post": "구독 1,600명, 아직 광고 수익은 없대요. 그래도 9개월째 계속하는 이유가 있다고 해요.\n작은 채널 풀리다가 롱폼 50개를 올리며 얻었다고 말한 것들을 정리했어요.\n여러분은 유튜브를 하며 조회수 말고 뭘 얻으셨나요?\n\n#유튜브브이로그 #퍼스널브랜딩 #유튜브9개월",
+  "cover": "유튜브 9개월… ==조회수 말고== 남은 게 있대요",
+  "slides": [
+   "../decks/2026-12-05_nine-months-gained/out-note/card-01.png",
+   "../decks/2026-12-05_nine-months-gained/out-note/card-02.png",
+   "../decks/2026-12-05_nine-months-gained/out-note/card-03.png",
+   "../decks/2026-12-05_nine-months-gained/out-note/card-04.png",
+   "../decks/2026-12-05_nine-months-gained/out-note/card-05.png",
+   "../decks/2026-12-05_nine-months-gained/out-note/card-06.png",
+   "../decks/2026-12-05_nine-months-gained/out-note/card-07.png"
+  ],
+  "captions": "# 2026-12-05 · 유튜브 9개월, 조회수 말고 남은 것 — 플랫폼별 글\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n구독 1,600명, 아직 광고 수익은 없대요. 그래도 9개월째 계속하는 이유가 있다고 해요.\n작은 채널 풀리다가 롱폼 50개를 올리며 얻었다고 말한 것들을 정리했어요.\n여러분은 유튜브를 하며 조회수 말고 뭘 얻으셨나요?\n\n#유튜브브이로그 #퍼스널브랜딩 #유튜브9개월\n\n출처: 풀리다 「유튜브 9개월, 롱폼 50개 올리고 알게 된 것들」\n"
+ },
+ {
+  "variants": {},
+  "zip": "../decks/2026-12-06_narrow-target-faster/2026-12-06_narrow-target-faster.zip",
+  "id": "2026-12-06_narrow-target-faster",
+  "date": "2026-12-06",
+  "title": "넓게 말고, 좁게 — 더 빨리 커요",
+  "status": "초안",
+  "theme": "note",
+  "source": {
+   "channel": "Dan the creator",
+   "video": "https://www.youtube.com/watch?v=Tun8FDrdaLU"
+  },
+  "facts": "ok",
+  "post": "\"모두를 위한 영상\"이 오히려 덜 본다는 유튜버 이야기예요.\n구독 34만 유튜버 Dan the creator가 자기 채널 조회수 320만 회로 보여준, 좁게 타겟팅하는 법을 정리했어요.\n여러분 다음 영상은, 누구 한 명을 위해 만들 건가요?\n\n#유튜브타겟팅 #유튜브후킹 #유튜브성장",
+  "cover": "모두에게 말하면, ==아무에게도== 안 먹혀요",
+  "slides": [
+   "../decks/2026-12-06_narrow-target-faster/out-note/card-01.png",
+   "../decks/2026-12-06_narrow-target-faster/out-note/card-02.png",
+   "../decks/2026-12-06_narrow-target-faster/out-note/card-03.png",
+   "../decks/2026-12-06_narrow-target-faster/out-note/card-04.png",
+   "../decks/2026-12-06_narrow-target-faster/out-note/card-05.png",
+   "../decks/2026-12-06_narrow-target-faster/out-note/card-06.png"
+  ],
+  "captions": "# 2026-12-06 · 넓게 말고, 좁게 — 더 빨리 커요 — 플랫폼별 글\n\n## 유튜브 커뮤니티 (본문 3줄 + 해시태그)\n\n\"모두를 위한 영상\"이 오히려 덜 본다는 유튜버 이야기예요.\n구독 34만 유튜버 Dan the creator가 자기 채널 조회수 320만 회로 보여준, 좁게 타겟팅하는 법을 정리했어요.\n여러분 다음 영상은, 누구 한 명을 위해 만들 건가요?\n\n#유튜브타겟팅 #유튜브후킹 #유튜브성장\n\n출처: Dan the creator 「You'll Hate This, But It'll Grow Your Channel 10x Faster」\n"
  }
 ];
